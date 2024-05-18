@@ -1,0 +1,279 @@
+body {
+  font-family: "Source Sans Pro", "Hiragino Kaku Gothic ProN", Meiryo, Arial, sans-serif;
+}
+
+p {
+  font-size: 15px;
+}
+
+header{
+  justify-content: center;
+}
+
+h2{
+  display: table;
+  position: relative;
+  margin: auto;
+  padding-bottom: 6px;
+  letter-spacing: 0.08em;
+  color: #5ac5cc;
+  line-height: 1;
+  font-size: 44px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+  background-size: contain;
+  background-image: -webkit-linear-gradient(0deg, #5ac5cc 0%, #2481e1 100%);
+  background-image: -moz-linear-gradient(0deg, #5ac5cc 0%, #2481e1 100%);
+  background-image: -o-linear-gradient(0deg, #5ac5cc 0%, #2481e1 100%);
+  background-image: linear-gradient(90deg, #5ac5cc 0%, #2481e1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/*================
+PC用のスタイル
+=================*/
+/* 横幅設定 */
+body {
+  max-width: 1080px;
+  min-width: 960px;
+  margin: 0 auto 0 auto;
+}
+
+#footer-top{
+  margin: 30px 0 30px 0;
+  /* padding: 10px 40px 0px 40px; */
+  display: flex;
+  justify-content: space-between;
+}
+#footer-top-left{
+  #footer-logo{
+    }
+    
+}
+#footer-adress{
+
+}
+#footer-reserve{
+  width: 200px;
+  height: 50px;
+  margin:30px 0 auto;
+  text-align: center;
+  line-height: 1;
+  letter-spacing: 0;
+  /* padding: 3px 5px 0 0; */
+  background-image: linear-gradient(90deg, #5ac5cc 0%, #2481e1 100%);
+  border-radius: 35px;
+  color: #fff;
+  /* box-sizing: border-box; */
+  position: relative;
+  display: block;
+  line-height: 42px;  
+  font-weight: 100px;
+  padding: 10px 20px;
+  /* letter-spacing: 2px; */
+  /* border-radius: 10px; */
+  /* transition: 0.8s; */
+  /* position: relative; */
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  position:relative;
+  width: 100%;
+}
+
+nav > a{
+  text-align: center;
+  font-family: "FOT-筑紫A丸ゴシック Std M";
+  letter-spacing: 0.1em;
+  color: #7a6a55;
+  text-decoration: none;
+}
+
+.home::after{
+  content:"HOME";
+  position: relative;
+  display: block;
+  color: #5ac5cc;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+.greet::after{
+  content:"GREET";
+  position: relative;
+  display: block;
+  color: #5ac5cc;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+
+.guide::after{
+  content:"GREET";
+  position: relative;
+  display: block;
+  color: #5ac5cc;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+
+  .news::after{
+  content:"NEWS";
+  position: relative;
+  display: block;
+  color: #5ac5cc;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+
+.contact::after{
+  content:"CONTACT";
+  position: relative;
+  display: block;
+  color: #5ac5cc;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+  .acsess::after{
+  content:"ACSESS";
+  position: relative;
+  display: block;
+  color: #5ac5cc;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+
+#calcat{
+  position: relative;
+  width: calc(100% - 250px);
+  -webkit-animation: anime 1.8s 0s linear;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#news-a{
+  display: flex;
+  display: -ms-flex;
+  justify-content: center;
+  justify-content: -ms-center;
+  align-items: center;
+  align-items: -ms-center;
+  position: relative;
+  width: 120px;
+  height: 35px;
+  line-height: 1;
+  font-size: 14px;
+  letter-spacing: 0;
+  padding: 3px 5px 0 0;
+  background-image: linear-gradient(90deg, #5ac5cc 0%, #2481e1 100%);
+  border-radius: 35px;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+#news-message{
+  display: flex;
+  justify-content: space-between;
+  width: 1052px;
+  /* height: 232px; */
+  margin: auto;
+
+}
+
+
+#nav-pc{
+  width: 1052px;
+  /* height: 232px; */
+  margin: auto;
+  box-sizing: border-box;
+}
+
+#nav-pc > li > span {
+  padding-right: 13%;
+  color: #555555;
+}
+
+/* 対象動物 */
+.whichanimals-img {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#whichanimals-one > img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* 診療 */
+.medical-table {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+  padding: 30px;
+}
+
+.medical-img{
+margin: auto;
+width: 100%;
+}
+
+.medical-h3{
+margin: auto;
+width: 100%;
+}
+
+.medical-p{
+margin: auto;
+width: 100%;
+}
+
+/* フッター */
+.footer-info{
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  margin: auto;
+}
+.footer-reserve{
+  width: 200px;
+  height: 45px;
+  text-align: center;
+  line-height: 1;
+  letter-spacing: 0;
+  padding: 14px 5px 0 0;
+  background-image: linear-gradient(90deg, #5ac5cc 0%, #2481e1 100%);
+  border-radius: 35px;
+  color: #fff;
+  box-sizing: border-box;
+  position: relative;
+  margin: 0 auto;
+  position: absolute;
+  margin-left: 80px;
+}
+
+#footer-day{
+  width: 80%;
+}
+
+.copy{
+  width: 100%;
+  height: 60px;
+  background-color: #98DBDF;
+  text-align: center;
+}
+
+
