@@ -29,6 +29,10 @@ h2{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+li{
+  list-style: none;
+}
 /*================
 PC用のスタイル
 =================*/
@@ -221,7 +225,7 @@ nav > a{
 /* 診療 */
 .medical-table {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   margin: 30px;
   padding: 30px;
 }
@@ -276,4 +280,9 @@ width: 100%;
   text-align: center;
 }
 
+footer > p {
+  color: #fff;
+  margin: auto;
+  
+}
 
