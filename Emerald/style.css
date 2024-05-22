@@ -8,13 +8,15 @@ p {
 
 header{
   justify-content: center;
+  margin: auto;
 }
 
 h2{
+  text-align: center;
   display: table;
   position: relative;
   margin: auto;
-  padding-bottom: 6px;
+  padding-bottom: 30px;
   letter-spacing: 0.08em;
   color: #5ac5cc;
   line-height: 1;
@@ -30,54 +32,48 @@ h2{
   -webkit-text-fill-color: transparent;
 }
 
+h3{
+  color: #138fd0;
+  text-align: center;
+  margin: auto;
+}
+
+h4{
+  color: #7a6a55;
+  text-emphasis: center;
+  margin: 0;
+}
+
 li{
   list-style: none;
 }
-/*================
-PC用のスタイル
-=================*/
-/* 横幅設定 */
-body {
-  max-width: 1080px;
-  min-width: 960px;
-  margin: 0 auto 0 auto;
+
+.a-reserve{
+  text-decoration: none ;
 }
 
-#footer-top{
-  margin: 30px 0 30px 0;
-  /* padding: 10px 40px 0px 40px; */
+/* #footer-top{
+  margin: 3% 5%;
+  padding: 10px auto;
   display: flex;
   justify-content: space-between;
-}
-#footer-top-left{
-  #footer-logo{
-    }
-    
-}
-#footer-adress{
+} */
 
-}
 #footer-reserve{
   width: 200px;
   height: 50px;
-  margin:30px 0 auto;
+  margin:auto auto;
   text-align: center;
   line-height: 1;
   letter-spacing: 0;
-  /* padding: 3px 5px 0 0; */
   background-image: linear-gradient(90deg, #5ac5cc 0%, #2481e1 100%);
   border-radius: 35px;
   color: #fff;
-  /* box-sizing: border-box; */
   position: relative;
   display: block;
   line-height: 42px;  
   font-weight: 100px;
   padding: 10px 20px;
-  /* letter-spacing: 2px; */
-  /* border-radius: 10px; */
-  /* transition: 0.8s; */
-  /* position: relative; */
 }
 
 nav{
@@ -85,6 +81,11 @@ nav{
   justify-content: space-between;
   position:relative;
   width: 100%;
+}
+
+#nav-pc > li > span {
+  padding-right: 13%;
+  color: #555555;
 }
 
 nav > a{
@@ -127,7 +128,7 @@ nav > a{
   font-weight: 400;
 }
 
-  .news::after{
+.news::after{
   content:"NEWS";
   position: relative;
   display: block;
@@ -148,7 +149,7 @@ nav > a{
   font-family: 'Lato', sans-serif;
   font-weight: 400;
 }
-  .acsess::after{
+.acsess::after{
   content:"ACSESS";
   position: relative;
   display: block;
@@ -159,12 +160,62 @@ nav > a{
   font-weight: 400;
 }
 
-#calcat{
+/* .carouselImg{
   position: relative;
-  width: calc(100% - 250px);
+  margin: auto;
+  width: 900px;
   -webkit-animation: anime 1.8s 0s linear;
   animation-fill-mode: forwards;
   -webkit-animation-fill-mode: forwards;
+  height: 500px;
+} */
+
+/* お知らせ*/
+
+#index-news{
+  padding-top: 64px;
+  padding-bottom: 64px;  
+}
+
+#index-news ::after{
+  content: "";
+  background: url(images/index/background2.png) center / 100% 100% no-repeat;
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  bottom: -500px;
+  right: 800px;
+  z-index: -1;
+  
+}
+
+#index-news ::before{
+  content: "";
+  background: url(images/index/background1.png) center / 100% 100% no-repeat;
+  width: 700px;
+  height: 500px;
+  position: absolute;
+  top: 180%;
+  left: 40px;
+  z-index: -1;
+}
+
+#news-message li{
+  padding: 20px;
+  margin: 20px;
+  border-bottom: 1px dashed;
+}
+
+#index-news #news-message  li span{
+  margin-right: 13%;
+  color: #7a6a55;
+}
+
+#index-news #news-message  li a{
+  margin-right: 13%;
+  color: #7a6a55;
+  text-decoration: none;
+  overflow-wrap:normal;
 }
 
 #news-a{
@@ -185,35 +236,49 @@ nav > a{
   border-radius: 35px;
   color: #fff;
   box-sizing: border-box;
+  margin: 0 1000px;
 }
 
-#news-message{
-  display: flex;
-  justify-content: space-between;
-  width: 1052px;
+/* #news-message{
+  /* display: flex; */
+  /* justify-content: space-between; */
+  /* width: 1052px; */
   /* height: 232px; */
-  margin: auto;
+  /* margin: auto; */
+/* } */ */
 
+#news-messagge > li{
+  padding: 24px 12px;
+  border-bottom: 1px dashed;
 }
 
-
-#nav-pc{
+/* #nav-pc{
   width: 1052px;
   /* height: 232px; */
-  margin: auto;
+  /* margin: auto;
   box-sizing: border-box;
+} */ */
+
+#whichanimals-one h3{
+  color: #138fd0;
+  text-align: center;
 }
 
-#nav-pc > li > span {
-  padding-right: 13%;
-  color: #555555;
+#whichanimals-one h4{
+  color: #7a6a55;
+  text-align: center;
 }
 
 /* 対象動物 */
-.whichanimals-img {
+#index-whichanimals{
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+/* .whichanimals-img {
   display: flex;
   justify-content: space-evenly;
-}
+} */
 
 #whichanimals-one > img {
   width: 200px;
@@ -222,41 +287,83 @@ nav > a{
   border-radius: 50%;
 }
 
+
 /* 診療 */
-.medical-table {
-  display: flex;
-  justify-content: space-evenly;
-  margin: 30px;
-  padding: 30px;
+table {
+  margin: 10px;
+  padding: 10px;
+  width: 100%;
+  table-layout: auto;
 }
 
+#index-medical::before{
+  content: "";
+  background: url(images/index/background1.png) center / 100% 150% no-repeat;
+  width: 245px;
+  height: 170px;
+  position: absolute;
+  top: 347px;
+  left: 80px;
+  z-index: -1;
+}
+
+
 .medical-img{
-margin: auto;
-width: 100%;
+  margin: auto;
+  width: 100%;
 }
 
 .medical-h3{
-margin: auto;
-width: 100%;
+  margin: auto;
+  width: 100%;
+  color: #138fd0;
+  text-align: center;
 }
 
 .medical-p{
-margin: auto;
-width: 100%;
+  margin: auto;
+  width: 100%;
+  color: #7a6a55
+  ;
 }
 
-/* フッター */
+#index-medical{
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+#index-medical ::after {
+  content: "";
+  background: url(images/index/background1.png) center / 100% 100% no-repeat;
+  width: 254px;
+  height: 200px;
+  position: absolute;
+  bottom: -40px;
+  right: -150px;
+  z-index: -1;
+}
+
+tr {
+  vertical-align: top;
+}
+
+td {
+  text-align: center;
+}
+
+/* フッター
 .footer-info{
   display: flex;
   justify-content: space-between;
   width: 1200px;
   margin: auto;
-}
-.footer-reserve{
+} */
+
+#footer-reserve{
   width: 200px;
   height: 45px;
   text-align: center;
-  line-height: 1;
+  line-height: 1; 
   letter-spacing: 0;
   padding: 14px 5px 0 0;
   background-image: linear-gradient(90deg, #5ac5cc 0%, #2481e1 100%);
@@ -264,20 +371,34 @@ width: 100%;
   color: #fff;
   box-sizing: border-box;
   position: relative;
-  margin: 0 auto;
-  position: absolute;
-  margin-left: 80px;
+  margin:5%;
+  /* position: absolute; */
+  /* margin-left: 80px; */
 }
 
-#footer-day{
-  width: 80%;
+#footer-left ul{
+  text-align: center;
 }
+
+#footer-left a{
+  text-align: center;
+}
+
+/* #footer-day{
+  width: 80%;
+  margin-top: 30px;
+  margin-left: 50px;
+  padding-top: 10px;
+  padding-left: 10px;
+} */
+
 
 .copy{
   width: 100%;
   height: 60px;
   background-color: #98DBDF;
   text-align: center;
+  line-height: 4;
 }
 
 footer > p {
@@ -285,4 +406,156 @@ footer > p {
   margin: auto;
   
 }
+/*================
+PC用のスタイル
+=================*/
+/* 画面幅が768px以上のとき */
+@media screen and (min-width: 1010px) {
+  /* PC用のスタイルを指定する */
 
+
+/* 横幅設定 */
+body {
+  /* max-width: 1080px; */
+  max-width: auto;
+  min-width: 960px;
+  margin: 0 auto 0 auto;
+}
+
+#footer-top{
+  margin: 3% 5%;
+  padding: 10px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+#nav-pc{
+  width: 1052px;
+  /* height: 232px; */
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.carouselImg{
+  position: relative;
+  margin: auto;
+  width: 900px;
+  -webkit-animation: anime 1.8s 0s linear;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  height: 500px;
+}
+
+#news-message{
+  /* display: flex; */
+  /* justify-content: space-between; */
+  width: 1052px;
+  /* height: 232px; */
+  margin: auto;
+}
+
+.whichanimals-img {
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer-info{
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  margin: auto;
+}
+#footer-day{
+  width: 80%;
+  margin-top: 30px;
+  margin-left: 50px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+
+}
+/*====================
+スマートフォン用のスタイル
+=====================*/
+/* 横幅が767pxまでの場合 */
+@media (max-width: 1010px) {
+
+  #footer-top {
+    margin: 3% 3%;
+    padding: 10px auto;
+    /* display: flex; */
+    /* justify-content: space-between; */
+}
+ 
+  nav {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 80%;
+  }  
+
+  #nav-pc {
+    /* width: 1052px; */
+    /* height: 232px; */
+    margin: auto;
+    box-sizing: border-box;
+  }
+
+  .footer-info {
+    /* display: flex; */
+    /* justify-content: space-between; */
+    width: 100%;
+    margin: auto;}
+  
+  .carouselImg{
+    position: relative;
+    margin: auto;
+    width: 500px;
+    -webkit-animation: anime 1.8s 0s linear;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    height: 300px;
+}
+  #news-message{
+    display: flex;
+    justify-content: space-between;
+    /* width: 1010px; */
+    /* height: 232px; */
+    margin: auto;
+  }
+  .whichanimals-img {
+    /* display: flex; */
+    /* justify-content: space-evenly; */
+    text-align: center;
+  }
+  .medical-p{
+    margin: auto;
+    width: 100%;
+    color: #7a6a55;
+    font-size: 12px;
+}
+ .medical-tabel tr img{
+    width: 30px;
+    }
+
+    .footer-info{
+      /* display: flex; */
+      /* justify-content: space-between; */
+      /* width: 100%; */
+      margin: auto;
+    }
+    
+    #footer-day{
+      width: 80%;
+      margin-top: 30px;
+      margin-left: 50px;
+      padding-top: 10px;
+      /* padding-left: 10px; */
+    }
+    
+  }
+ 
+
+
+    
+  

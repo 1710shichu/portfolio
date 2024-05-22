@@ -6,6 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EmeraldAnimalClinic</title>
   <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- slickの読み込み -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+
 </head>
 <body>
   <!-- ヘッダー -->
@@ -17,7 +24,7 @@
        <img id=footer-adress src="images/adress.png" alt="住所と電話番号">
       </div>
       <div id="footer-top-right"></div>
-       <a href="" id="footer-reserve" alt="予約へ">予約</a>
+       <a href="" class="a-reserve" id="footer-reserve" alt="予約へ">予約</a>
       </div>
     </div>
       <!-- PC用ナビゲーション -->
@@ -31,14 +38,31 @@
       </nav>
     </header>
   <main>
-    <section id="main-visual">
-      <img id=calcat src="images/index/carousel1.jpg" alt="カルーセル猫">
-    </section>
-    
+    <!-- <section id="main-visual"> -->
+      <!-- <img id=calcat src="images/index/carousel1.jpg" alt="カルーセル猫"> -->
+    <!-- </section> -->
+    <section id="carousel-section">
+      <div class="carousel">
+        <div>
+          <img class="carouselImg" src="images/index/carousel1.jpg">
+        </div>
+        <div>
+          <img class="carouselImg" src="images/index/carousel2.jpg">
+        </div>
+        <div>
+          <img class="carouselImg" src="images/index/carousel3.jpg">
+        </div>
+        <div>
+          <img class="carouselImg" src="images/index/carousel4.jpg">
+        </div>
+       
+      </div>
+    </section>   
     <!-- お知らせ -->
     <section id="index-news">
       <div id="news-main">
         <h2>NEWS</h2>
+        <a id="news-a" href="news.html">一覧を見る</a>
         <div id="news-message">
           <ul>
             <li>
@@ -51,39 +75,45 @@
             </li>
             <li>
               <span>2024年3月26日</span>
-              <a href="">【フィラリア予防】【狂犬病予防接種】…</a>
+              <a href="">【フィラリア予防】【狂犬病予防接種】</a>
             </li>
           </ul>
-          <a id="news-a" href="news.html">一覧を見る</a>
         </div>
       </div>
     </section>
+    
+<!-- 対象動物 -->
     <section id="index-whichanimals">
       <!-- <div id="whichanimals-main"> -->
         <h2 class="whichanimals-h2">WHICH ANIMALS</h2>
         <div class="whichanimals-img">
           <div id="whichanimals-one">
             <img src="images/index/animals-dog.jpg" alt="犬">
-            <h3>イヌ</h3>
+            <h3>DOG</h3>
+            <h4>イヌ</h4>
           </div>
           <div id="whichanimals-one">
-            <img src="images/index/animals-cat.jpg" alt="犬">
-            <h3>ネコ</h3>
+            <img src="images/index/animals-cat.jpg" alt="猫">
+            <h3>CAT</h3>
+            <h4>猫</h4>
           </div>
           <div id="whichanimals-one">
-            <img src="images/index/animals-rat.jpg" alt="犬">
-            <h3>げっ歯類小型草食動物</h3>
+            <img src="images/index/animals-rat.jpg" alt="ゲッ歯類">
+            <h3>RAT&RABBIT</h3>
+            <h4>げっ歯類＆ウサギ</h4>
           </div>
           <div id="whichanimals-one">
-            <img src="images/index/animals-bird.jpg" alt="犬">
-            <h3>鳥類</h3>
+            <img src="images/index/animals-bird.jpg" alt="鳥類">
+            <h3>BIRD</h3>
+            <h4>鳥類</h4>
           </div>
         </div>
       <!-- </div> -->
     </section>
+
     <section id="index-medical">
        <h2>MEDICAL</h2>
-       <table class="medical-table">
+       <table class="medical-tabel">
         <tr>
           <td><img src="images/index/medical1.png" alt="予防医療"></td>
           <td><img src="images/index/medical2.png" alt="健康診断"></td>
@@ -111,28 +141,25 @@
               避妊去勢</p>
           </td>
           <td>
-            <p class="medical-p">若い子なら<br>
-              一年に一回<br>
-              シニアになったら<br>
-              半年に一回<br>
+            <p class="medical-p">
+              若い子なら一年に一回<br>
+              シニアになったら半年に一回<br>
               健康診断</p>
           </td>
           <td>
-            <p class="medical-p">急患の場合のみ<br>
-              休診日や夜間の<br>
-              診療を行っています。<br>
-              必要に応じて<br>
-              お近くの救急病院に<br>
-              ご案内することも<br>
-              あります</p>
+            <p class="medical-p">
+              急患の場合のみ<br>
+              休診日や夜間の診療を行っています<br>
+              必要に応じてお近くの救急病院に<br>
+              ご案内することもあります</p>
           </td>
           <td>
-            <p class="medical-p">介護や病気、性格上の都合、<br>
+            <p class="medical-p">介護や病気、<br>
               飼い主様のご事情で<br>
-              来院が難しい場合は<br>
+              来院が難しい場合は
               ご相談ください</p>
-          </td>
-        </tr>    
+          </td> 
+          </tr>    
       </table>
     </section>
   </main>
@@ -145,17 +172,26 @@
         </li>
         <li id="footer-adress">
           <img src="images/adress.png" alt="住所と電話番号"></a>
+          <!-- <p class=footer-reserve> -->
+            <a class=a-reserve id=footer-reserve  href="">予約</a>
+          <!-- </p> -->
         </li>
       </ul>
-      <p class=footer-reserve><a href="">予約</a></p>
       <!-- <a href=""><img src="images/reserve.png" alt="予約へ"></a> -->
     </div>
     <div id="footer-right">
       <img id="footer-day" src="images/day.png" alt="診療日時">
     </div>
    </div>
-   <p class="copy"><small>© サファイア歯科</small>
+   <p class="copy"><small>© エメラルド動物病院</small>
    </p>
   </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+
+  <!-- slickの読み込み -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
 </body>
 </html>
