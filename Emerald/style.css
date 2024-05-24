@@ -48,10 +48,12 @@ li{
   list-style: none;
 }
 
-.a-reserve{
+/* .a-reserve{
   text-decoration: none ;
-}
+} */
+#footer-top-right{
 
+}
 /* #footer-top{
   margin: 3% 5%;
   padding: 10px auto;
@@ -74,7 +76,9 @@ li{
   line-height: 42px;  
   font-weight: 100px;
   padding: 10px 20px;
+  text-decoration: none ;
 }
+
 
 nav{
   display: flex;
@@ -189,11 +193,22 @@ nav > a{
   
 }
 
-#index-news ::before{
+/* #index-news ::before{
   content: "";
   background: url(images/index/background1.png) center / 100% 100% no-repeat;
   width: 700px;
   height: 500px;
+  position: absolute;
+  top: 180%;
+  left: 40px;
+  z-index: -1;
+} */
+
+#index-whichanimals ::before{
+  content: "";
+  background: url(images/index/background1.png) center / 100% 100% no-repeat;
+  width: 100px;
+  height: 100px;
   position: absolute;
   top: 180%;
   left: 40px;
@@ -371,26 +386,20 @@ td {
   color: #fff;
   box-sizing: border-box;
   position: relative;
-  margin:5%;
+  /* margin:5%; */
   /* position: absolute; */
   /* margin-left: 80px; */
 }
 
 #footer-left ul{
   text-align: center;
+  padding-left: 0;
 }
 
 #footer-left a{
   text-align: center;
 }
 
-/* #footer-day{
-  width: 80%;
-  margin-top: 30px;
-  margin-left: 50px;
-  padding-top: 10px;
-  padding-left: 10px;
-} */
 
 
 .copy{
@@ -406,6 +415,116 @@ footer > p {
   margin: auto;
   
 }
+
+#top-image img{
+  width: 100%;
+}
+
+
+
+/* CONTACT */
+
+/* お問い合わせ */
+#contact{
+  margin: 80px auto 80px auto;
+}
+
+#contact form{
+  margin: auto auto auto 25%;
+}
+/* 外枠 */
+#contact form div{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+}
+
+/* 左列の見出し */
+.contact-heading{
+  width: 240px;
+  align-items: center;
+}
+
+.contact-label{
+  font-weight: bold;
+  color: #7a6a55;
+}
+
+.contact-span{
+  color: #fff;
+  background-color: #822929;
+  padding: 0px 7px;
+  margin: 0 0 0 20px;
+  font-weight: bold;
+}
+
+#contact form div label{
+  color: #7a6a55;
+  padding: 0 10px 0 0; 
+}
+
+/* テキストボックス */
+.contact-text{
+  /* border:0 0 0 0; */
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom-width: 1px;
+  border-bottom-color: #f7f7f7;
+  border-bottom-style: solid;
+  background-color: #f7f7f7;
+}
+
+
+
+/* お問い合わせテキスト */
+/* .contact-textarea{
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom-width: 1px;
+  border-bottom-color: #f7f7f7;
+  border-bottom-style: solid;
+  background-color: #f7f7f7;
+  width: 400px;
+  height: 200px;
+} */
+
+/* 送信ボタン */
+
+.btn-submit input[type="submit" ]{
+      background-color: transparent;
+     border: none;
+     /* position: absolute; */
+     margin: 0 75px;
+    
+}
+
+.text-submit{
+  font-size: 20px;
+  display: flex;
+    display: -ms-flex;
+    justify-content: center;
+    justify-content: -ms-center;
+    align-items: center;
+    align-items: -ms-center;
+    position: relative;
+    width: 215px;
+    height: 45px;
+    line-height: 1;
+    letter-spacing: 0;
+    padding: 0 5px 3px 0;
+    transition: ease-in-out 0.2s;
+    background-image: linear-gradient(90deg, #5ac5cc 0%, #2481e1 100%);
+    border-radius: 35px;
+    color: #fff;
+    font-family: "FOT-筑紫A丸ゴシック Std M";
+    box-sizing: border-box;
+    /* text-align: center; */
+}
+
+
 /*================
 PC用のスタイル
 =================*/
@@ -423,7 +542,7 @@ body {
 }
 
 #footer-top{
-  margin: 3% 5%;
+  margin: 2% 2%;
   padding: 10px auto;
   display: flex;
   justify-content: space-between;
@@ -464,13 +583,26 @@ body {
   width: 1200px;
   margin: auto;
 }
-#footer-day{
+/* #footer-day{
   width: 80%;
   margin-top: 30px;
   margin-left: 50px;
   padding-top: 10px;
   padding-left: 10px;
+} */
+
+.contact-textarea{
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom-width: 1px;
+  border-bottom-color: #f7f7f7;
+  border-bottom-style: solid;
+  background-color: #f7f7f7;
+  width: 400px;
+  height: 200px;
 }
+
 
 
 }
@@ -482,11 +614,15 @@ body {
 
   #footer-top {
     margin: 3% 3%;
-    padding: 10px auto;
-    /* display: flex; */
-    /* justify-content: space-between; */
-}
- 
+      /* margin: 2% 2%; */
+      padding: 10px auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+  }
+
+
   nav {
     display: flex;
     justify-content: space-between;
@@ -538,23 +674,55 @@ body {
     width: 30px;
     }
 
-    .footer-info{
-      /* display: flex; */
-      /* justify-content: space-between; */
-      /* width: 100%; */
-      margin: auto;
-    }
+  .footer-info{
+      margin: 3% 0;
+        /* margin: 2% 2%; */
+        /* padding: 10px auto; */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+  
+      }
     
-    #footer-day{
-      width: 80%;
-      margin-top: 30px;
-      margin-left: 50px;
-      padding-top: 10px;
-      /* padding-left: 10px; */
-    }
-    
+  #footer-day{ 
+  width: 80%;
+  /* margin-top: 30px;
+  margin-left: 50px;
+  padding-top: 10px; */
+  /* padding-left: 10px; */
+} 
+
+#footer-reserve{
+    text-align: center;
   }
- 
+
+    #footer-right{
+     text-align: center;
+    }
+
+    .contact-textarea{
+      border-top: 0;
+      border-left: 0;
+      border-right: 0;
+      border-bottom-width: 1px;
+      border-bottom-color: #f7f7f7;
+      border-bottom-style: solid;
+      background-color: #f7f7f7;
+      width: 200px;
+      height: 200px;
+    }
+    
+    /* 外枠 */
+#contact form div{
+  /* display: flex; */
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+}
+
+}
+
+   
 
 
     
