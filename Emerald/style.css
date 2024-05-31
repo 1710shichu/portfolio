@@ -1,3 +1,9 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  /* padding: 0; */
+}
+
 body {
   font-family: "Source Sans Pro", "Hiragino Kaku Gothic ProN", Meiryo, Arial, sans-serif;
   line-height: 1.75;
@@ -7,6 +13,9 @@ body {
 
 p {
   font-size: 15px;
+  color: #7a6a55;
+  line-height: 1.875;
+  letter-spacing: 0;
 }
 
 header{
@@ -45,6 +54,7 @@ h4{
   color: #7a6a55;
   text-emphasis: center;
   margin: 0;
+  font-size: 2rem;
 }
 
 li{
@@ -124,7 +134,7 @@ nav > a{
 }
 
 .guide::after{
-  content:"GREET";
+  content:"GUIDE";
   position: relative;
   display: block;
   color: #5ac5cc;
@@ -183,7 +193,7 @@ nav > a{
   padding-bottom: 64px;  
 }
 
-#index-news ::after{
+/* #index-news ::after{
   content: "";
   background: url(images/index/background2.png) center / 100% 100% no-repeat;
   width: 500px;
@@ -193,7 +203,21 @@ nav > a{
   right: 800px;
   z-index: -1;
   
-}
+} */
+
+#index-news{
+    background:url(images/index/background2.png) ;  
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: 0%;
+    background-position-x: center;
+    background-position-y: bottom;
+    background-position: right;
+  
+  }
+  
+
+
 
 /* #index-news ::before{
   content: "";
@@ -206,7 +230,7 @@ nav > a{
   z-index: -1;
 } */
 
-#index-whichanimals ::before{
+/* #index-whichanimals ::before{
   content: "";
   background: url(images/index/background1.png) center / 100% 100% no-repeat;
   width: 100px;
@@ -215,7 +239,19 @@ nav > a{
   top: 180%;
   left: 40px;
   z-index: -1;
+} */
+
+#index-whichanimals{
+  background:url(images/index/background1.png) ;  
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: -11%;
+  /* background-position-x: center; */
+  background-position-y: 23%;
+
 }
+
+
 
 #news-message li{
   padding: 20px;
@@ -313,7 +349,7 @@ table {
   table-layout: auto;
 }
 
-#index-medical::before{
+/* #index-medical::before{
   content: "";
   background: url(images/index/background1.png) center / 100% 150% no-repeat;
   width: 245px;
@@ -322,6 +358,16 @@ table {
   top: 347px;
   left: 80px;
   z-index: -1;
+} */
+
+#index-medical{
+  background:url(images/index/background2.png) ;  
+  background-size: 21%;
+  background-repeat: no-repeat;
+  background-position: 0%;
+  background-position-x: right;
+  background-position-y: bottom;
+
 }
 
 
@@ -349,16 +395,7 @@ table {
   padding-bottom: 64px;
 }
 
-#index-medical ::after {
-  content: "";
-  background: url(images/index/background1.png) center / 100% 100% no-repeat;
-  /* width: 254px; */
-  height: 200px;
-  position: absolute;
-  bottom: -40px;
-  right: -150px;
-  z-index: -1;
-}
+
 
 tr {
   vertical-align: top;
@@ -440,10 +477,26 @@ footer > p {
 /* お問い合わせ */
 #contact{
   margin: 80px auto 80px auto;
+
+  background:url(images/index/background1.png) ;  
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: 0%;
+  background-position-x: left;
+  background-position-y: bottom;
+
 }
 
 #contact form{
   margin: auto auto auto 25%;
+
+  background:url(images/index/background2.png) ;  
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: 0%;
+  background-position-x: right;
+  background-position-y: bottom;
+
 }
 /* 外枠 */
 #contact form div{
@@ -543,6 +596,14 @@ footer > p {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  background:url(images/index/background1.png) ;  
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: 0%;
+  background-position-x: -9%;
+  background-position-y: 0%;
+
 }
 
 /* .acseess-map {
@@ -551,6 +612,14 @@ footer > p {
 
 #acsess-clinicinfo{
   margin: 80px auto 80px auto;
+
+  background:url(images/index/background2.png) ;  
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: 0%;
+  background-position-x: right;
+  background-position-y: bottom;
+
 }
 
 .clinicinfo{
@@ -608,6 +677,317 @@ footer > p {
   padding-bottom: 20px;
 }
 
+/* GREET */
+.greet-title{
+  margin: 80px 5% 80px 5%;
+  padding: 1%;
+}
+
+/* .greet-title-p{
+  margin: 80px 10% 80px 10%;
+  background:url(images/index/background3.png) ;  
+  background-size: 90%;
+  background-repeat: no-repeat;
+} */
+
+#greet-box{
+  display: flex;
+  justify-content: center;
+}
+
+.greet-exp{
+  width: 250px;
+  margin: 10%;
+
+}
+/* .greet-policy{
+  margin: 80px auto 80px auto;
+}
+.greet-clinicphoto{
+  margin: 80px auto 80px auto; 
+}*/
+
+#greet-policy-exp-01 h3{
+  position: relative;
+  left: -8px;
+  display: block;
+  color: #1290d0;
+  font-family: adobe-garamond-pro, serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 100px;
+  line-height: 1;
+  letter-spacing: 0;
+  text-align: left;
+}
+#greet-policy-exp-01 h4{
+  color: #1290d0;
+  font-size: 30px;
+  line-height: 1.56;
+  font-feature-settings: "palt";
+  letter-spacing: 0.1em;
+  font-family: "FOT-筑紫A丸ゴシック Std M";
+}
+
+#greet-policy-exp-02 h3{
+  position: relative;
+  left: -8px;
+  display: block;
+  color: #5BB2DB;
+  font-family: adobe-garamond-pro, serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 100px;
+  line-height: 1;
+  letter-spacing: 0;
+  text-align: right;
+}
+#greet-policy-exp-02 h4{
+  color: #5BB2DB;
+  text-align: right;
+  font-size: 30px;
+  line-height: 1.56;
+  font-feature-settings: "palt";
+  letter-spacing: 0.1em;
+  font-family: "FOT-筑紫A丸ゴシック Std M";
+
+}
+
+.greet-policy-p{
+  text-align: right;
+}
+
+
+#greet-policy-exp-03 h3{
+  position: relative;
+  left: -8px;
+  display: block;
+  color: #09b7c2;
+  font-family: adobe-garamond-pro, serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 100px;
+  line-height: 1;
+  letter-spacing: 0;
+  text-align: left;
+} 
+#greet-policy-exp-03 h4{
+  color: #09b7c2;
+  font-size: 30px;
+  line-height: 1.56;
+  font-feature-settings: "palt";
+  letter-spacing: 0.1em;
+  font-family: "FOT-筑紫A丸ゴシック Std M";
+}
+
+.greet-policy-exp{
+  margin-bottom: 66px;
+}
+
+/* #clinicphoto img{
+  width: 30%;
+  padding: 10px;
+} */
+
+
+/* .cp-img{
+  width: 33%;
+  display: flex;
+  justify-content: space-between;
+  /* margin: 0 30px 0 30px;} */
+
+
+/* .cp-img2{
+  display: flex;
+  justify-content: space-between;
+}  */
+
+.cp-img ul li:nth-child(2){
+  margin: 0 10px;
+}
+
+/* .cp-img p{
+  text-align: center;
+  font-size: 20px;
+} */
+
+/* #clinicphoto{
+  display: flex;
+  flex-wrap: wrap;
+} */
+
+
+/* WHICHIANIMALS */
+
+#animals{
+  margin: 80px 0 80px 0;
+ padding: 10px 40px 0px 40px;
+ background:url(images/index/background1.png) ;  
+ background-size: 50%;
+ background-repeat: no-repeat;
+ background-position: 0%;
+ background-position-x: 0;
+ background-position-y: bottom;
+}
+
+.animals-left{
+  background:url(images/index/background1.png) ;  
+  background-size: 14%;
+  background-repeat: no-repeat;
+  background-position: 0;
+  background-position-x: right;
+  background-position-y: bottom;
+
+}
+
+
+.animals-explain-rat{
+  background:url(images/index/background2.png) ;  
+  background-size: 45%;
+  background-repeat: no-repeat;
+  background-position: 0;
+  background-position-x: right;
+  background-position-y: -60px;
+
+}
+
+
+/* イヌ */
+.animals-explain-dog ::before{
+  content: url(images/index/WELCOMETO/dogcut.png);
+  background-size: 30%;
+}
+.animals-explain-dog h3::after{
+  content: "イヌ";
+  position: relative;
+  /* display: block; */
+  color: #7a6a55;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+
+.animals-explain-dog h3{
+  font-size: 30px;
+  color: #98DBDF;
+}
+
+/* ネコ */
+/* .animals-explain-cat ::after{
+  content: url(images/index/WELCOMETO/catcut.png);
+}
+.animals-explain-cat h3::before{
+  content: "ネコ";
+  position: relative;
+  color: #7a6a55;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+.animals-explain-cat h3{
+  font-size: 30px;
+  color: #98DBDF;
+} */
+
+/* ラット */
+/* .animals-explain-rat ::before{
+  content: url(images/index/WELCOMETO/ratcut.png);
+}
+.animals-explain-rat h3::after{
+  content: "げっ歯類＆小型草食動物";
+  position: relative;
+  color: #7a6a55;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+} */
+
+.animals-explain-rat h3{
+  font-size: 30px;
+  color: #98DBDF;
+}
+
+#animals-rat{
+text-align: right;
+padding: 0.5em 1em;
+margin: 2em 0;
+color: #ffffff;
+background: #7a6a55;/*背景色*/
+border-left: double 7px #4ec4d3;/*左線*/
+border-right: double 7px #4ec4d3;/*右線*/
+/* width: 50%; */
+}
+
+#animals-rat{
+  text-align: right;
+}
+
+#animals-rabit{
+text-align: right;
+padding: 0.5em 1em;
+margin: 2em 0;
+color: #ffffff;
+background: #7a6a55;/*背景色*/
+border-left: double 7px #4ec4d3;/*左線*/
+border-right: double 7px #4ec4d3;/*右線*/
+}
+#animals-bird{
+text-align: left;
+padding: 0.5em 1em;
+margin: 2em 0;
+color: #ffffff;
+background: #7a6a55;/*背景色*/
+border-left: double 7px #4ec4d3;/*左線*/
+border-right: double 7px #4ec4d3;/*右線*/
+}
+
+/* 鳥 */
+/* .animals-explain-bird ::after{
+  content: url(images/index/WELCOMETO/birdcut.png);
+}
+.animals-explain-bird h3::before{
+  content: "トリ";
+  position: relative;
+  color: #7a6a55;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+.animals-explain-bird h3{
+  font-size: 30px;
+  color: #98DBDF;
+} */
+
+.animals-warm ::before{
+  content: url(images/chui.png);
+  /* display: center; */
+  transform: scale(0.7);
+  padding-bottom: 20px;
+}
+
+.animals-warm{
+text-align: center;
+padding-top: 30px;
+font-size: 25px;
+}
+
+ /* .welcome-exp{
+  display: flex;
+} 
+
+ .arrow{
+  opacity: 30%;
+  text-align: right;
+} */
+
+#welcometo-top{ 
+  margin: 80px auto 80px auto;
+  padding: 30px;
+} 
 
 
 /*================
@@ -709,7 +1089,209 @@ PC用のスタイル
   background-color: #E2F2F4;
   padding: 40px;
 }
+#clinicphoto{
+  display: flex;
+  flex-wrap: wrap;
+}
 
+.greet-title-p{
+  margin: 80px 10% 80px 10%;
+  background:url(images/index/background3.png) ;  
+  background-size: 90%;
+  background-repeat: no-repeat;
+}
+
+#greet-box{
+  background:url(images/index/background1.png),url(images/index/background2.png);  
+  background-size: 30%, 30%;
+  background-repeat: no-repeat,no-repeat;
+  background-position: 0%, right;
+  background-position-x: center,right;
+  background-position-y: bottom, top;
+
+}
+
+.cp-img{
+  width: 33%;
+  display: flex;
+  justify-content: space-between;
+  /* margin: 0 auto 0 auto; */
+}
+
+.cp-img2{
+  /* width: 33%; */
+  display: flex;
+  justify-content: space-between;
+  /* margin: 0 30px 0 30px; */
+}
+/* .welcome-exp{
+  display: flex;
+} */
+
+.my_container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 200px;
+}
+
+.way_boxbox01{
+  text-align: center;
+  position: relative;
+  width: 25%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.way_boxbox02{
+  text-align: center;
+  position: relative;
+  width: 25%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.way_boxbox03{
+  text-align: center;
+  position: relative;
+  width: 25%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.way_boxbox04{
+  text-align: center;
+  position: relative;
+  width: 25%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.way_number{
+  font-size: 10rem;
+    color: #BADFDB;
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 160px;
+    line-height: 0;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    opacity: 50%;
+}
+
+.way_boxbox0nth img {
+  position: absolute;
+  top: 15%;
+  left: 20%;
+  z-index: 2;
+  width: 70%;
+  max-width: 200px;
+  height: auto;
+}
+
+#welcometo-top ul{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 4%;
+}
+#welcometo-top ul li{
+  text-align: center;
+}
+
+.way_box01_responsive{
+  display: none;
+  
+}
+.way_box02_responsive{
+  display: none;
+}
+.way_box03_responsive{
+  display: none;
+}
+.way_box04_responsive{
+  display: none;
+}
+
+
+/* イヌ */
+.animals-explain-dog ::before{
+  content: url(images/index/WELCOMETO/dogcut.png);
+  background-size: 30%;
+}
+.animals-explain-dog h3::after{
+  content: "イヌ";
+  position: relative;
+  /* display: block; */
+  color: #7a6a55;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+
+.animals-explain-dog h3{
+  font-size: 30px;
+  color: #98DBDF;
+}
+
+/* ネコ */
+.animals-explain-cat ::after{
+  content: url(images/index/WELCOMETO/catcut.png);
+}
+.animals-explain-cat h3::before{
+  content: "ネコ";
+  position: relative;
+  color: #7a6a55;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+.animals-explain-cat h3{
+  font-size: 30px;
+  color: #98DBDF;
+}
+
+/* トリ */
+.animals-explain-bird ::after{
+  content: url(images/index/WELCOMETO/birdcut.png);
+}
+.animals-explain-bird h3::before{
+  content: "トリ";
+  position: relative;
+  /* display: block; */
+  color: #7a6a55;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+.animals-explain-bird h3{
+  font-size: 30px;
+  color: #98DBDF;
+}
+
+/* ラット */
+.animals-explain-rat ::before{
+  content: url(images/index/WELCOMETO/ratcut.png);
+}
+.animals-explain-rat h3::after{
+  content: "げっ歯類＆小型草食動物";
+  position: relative;
+  /* display: block; */
+  color: #7a6a55;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
 
 
 
@@ -780,6 +1362,17 @@ PC用のスタイル
     /* justify-content: space-evenly; */
     text-align: center;
   }
+
+  #index-whichanimals{
+    background:url(images/index/background1.png) ;  
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: -11%;
+    background-position-x: left;
+    background-position-y: 23%;
+  
+  }
+  
   .medical-p{
     margin: auto;
     width: 100%;
@@ -885,10 +1478,243 @@ PC用のスタイル
 
 
 
+
+
+/* GREET */
+#greet-img{
+  width: 20%;
 }
 
-   
+#greet-img img{
+  /* margin: 0 auto;
+  width: 360%;
+  opacity: 0.5; */
+  display: none;
+}
+
+.cp-img{
+  width: 100%;
+  margin: 0 30px 0 30px;
+  
+}
+
+.greet-exp{
+  width: 250px;
+  margin: 10%;
+  /* margin: 80px 10% 80px 10%;
+  background:url(images/index/greet-greeting.jpg) ;  
+  background-size: 90%;
+  background-repeat: no-repeat;
+  opacity: 50%; */
+}
+
+.greet-exp p{
+  color: #241f19;
+}
+#greet-box{
+  display: flex;
+  justify-content: center;
+  margin: 80px 10% 80px 10%;
+  background:url(images/index/greet-greeting.jpg) ;  
+  background-size: 100%;
+  background-repeat: no-repeat;
+  opacity: 50%;
+}
+
+.greet-title-p{
+  margin: 80px 10% 80px 10%;
+  background:url(images/index/background3.png) ;  
+  background-size: 133%;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-position: 0%;
+  background-position-x: center;
+
+}
 
 
+.cp-img{
+margin: 0;
+padding: 0;
+}
+
+.cp-img2{
+  margin: 0;
+  padding: 0;
+}
+
+.cp-img ul{
+  margin: 0;
+  padding: 0;
+  /* display: flex; */
+  /* flex-direction: column; */
+}
+
+.cp-img2 ul{
+  margin: 0;
+  padding: 0;
+}
+
+/* .welcome-exp{
+  display: flex;
+  flex-direction: column;
+  /* margin-left: 25%; */
+
+
+.my_container{
+  display: none;
+}
+
+/* #welcometo-top li{
+  line-height: 4.75;
+} */
+
+/* #welcometo-top ul li div{
+ display: block;
+ margin: 30px auto 30px au;
+} */
+
+
+.way_number{
+  font-size: 3rem;
+  color: #BADFDB;
+  font-weight: 600;
+  text-align: left;
+  margin-bottom: 20px;
+  line-height: 0;
+  position: relative;
+  /* top: 45px; */
+  left: 0;
+  /* left: -50%; */
+}
+
+
+.way_box01_responsive img{ 
+   width: 70%;
+   left: 40%;
+   position: relative;
+   left: 50%;
+   z-index: 2;
+   max-width: 200px;
+   height: auto;
+}
+.way_box02_responsive img{
+   left: 40%;
+   position: relative;
+   z-index: 2;
+   width: 70%;
+   max-width: 200px;
+   height: auto;
+}
+.way_box03_responsive img{
+  left: 40%;
+  position: relative;
+  z-index: 2;
+  width: 50%;
+  max-width: 200px;
+  height: auto;
+ 
+}
+.way_box04_responsive img{
+  left: 40%;
+   position: relative;
+   z-index: 2;
+   width: 50%;
+   max-width: 200px;
+   height: auto;
+} 
+
+#welcometo-top ul li{
+  margin: 40px 10px 40px 10px;
+}
+
+#welcometo-top ul{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto 0 auto;
+  padding: 0 0 0 0;
+  padding-left: 10%;
+
+}
+
+
+/* イヌ */
+.animals-explain-dog ::before{
+  content: url(images/index/WELCOMETO/smf/dogcut.png);
+  background-size: 30%;
+}
+.animals-explain-dog h3::after{
+  content: "イヌ";
+  position: relative;
+  /* display: block; */
+  color: #7a6a55;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+.animals-explain-dog h3{
+  font-size: 30px;
+  color: #98DBDF;
+}
+
+/* ネコ */
+.animals-explain-cat ::before{
+  content: url(images/index/WELCOMETO/smf/catcut.png);
+}
+.animals-explain-cat h3::after{
+  content: "ネコ";
+  position: relative;
+  /* display: block; */
+  color: #7a6a55;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+.animals-explain-cat h3{
+  font-size: 30px;
+  color: #98DBDF;
+}
+/* ラット */
+.animals-explain-rat ::before{
+  content: url(images/index/WELCOMETO/smf/ratcut.png);
+}
+.animals-explain-rat h3::after{
+  content: "げっ歯類＆小型草食動物";
+  position: relative;
+  /* display: block; */
+  color: #7a6a55;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+
+
+/* トリ */
+.animals-explain-bird ::before{
+  content: url(images/index/WELCOMETO/smf/birdcut.png);
+}
+.animals-explain-bird h3::after{
+  content: "トリ";
+  position: relative;
+  /* display: block; */
+  color: #7a6a55;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+.animals-explain-bird h3{
+  font-size: 30px;
+  color: #98DBDF;
+}
+
+
+}
+
+
+}
     
   
