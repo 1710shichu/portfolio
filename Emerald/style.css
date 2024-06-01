@@ -1046,6 +1046,9 @@ font-size: 25px;
   background-position-y: bottom;
 }
 
+#footer-adress{
+  margin-bottom: 30px;
+}
 
 
 /*================
@@ -1139,6 +1142,7 @@ PC用のスタイル
   width: 400px;
   height: 200px;
 }
+
 
 /* ACSESS */
 #acsess-info{
