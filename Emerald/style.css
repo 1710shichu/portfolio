@@ -23,6 +23,9 @@ header{
   margin: auto;
 }
 
+footer{
+  margin-top: 100px;
+}
 h2{
   text-align: center;
   display: table;
@@ -42,6 +45,8 @@ h2{
   background-image: linear-gradient(90deg, #5ac5cc 0%, #2481e1 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin-top: 80px;
+  margin-bottom: 30px;
 }
 
 h3{
@@ -401,9 +406,9 @@ tr {
   vertical-align: top;
 }
 
-td {
+/* td {
   text-align: center;
-}
+} */
 
 /* フッター
 .footer-info{
@@ -990,6 +995,59 @@ font-size: 25px;
 } 
 
 
+/* NEWS */
+/* .news-top table{
+  margin: 30px 80px 30px 80px;
+  padding-left: 20%;
+} */
+
+#news div{
+  display: flex;
+}
+
+.nesw-img{
+  margin: 0 20px 0 0;
+}
+.news-date{
+  color: #98DBDF;
+  font-weight: 100S;
+  font-size: 24px;
+  display: block;
+}
+.news-title{
+  font-size: 28px;
+  font-weight: 200;
+  color: #4b4b4b;
+}
+
+.news-topic{
+  margin: 0;
+}
+
+.medical-tr{
+  text-align: center;
+}
+
+#news{
+  background:url(images/index/background1.png) ;  
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: 0%;
+  background-position-x: right;
+  background-position-y: bottom;
+}
+
+.news-top{
+  background:url(images/index/background2.png) ;  
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: 0%;
+  background-position-x: left;
+  background-position-y: bottom;
+}
+
+
+
 /*================
 PC用のスタイル
 =================*/
@@ -1293,6 +1351,12 @@ PC用のスタイル
   font-weight: 400;
 }
 
+/* NEWS */
+.news-top table{
+  margin: 30px 80px 30px 80px;
+  padding-left: 20%;
+}
+
 
 
 
@@ -1382,6 +1446,7 @@ PC用のスタイル
  .medical-tabel tr img{
     width: 30px;
     }
+
 
   .footer-info{
       margin: 3% 0;
@@ -1711,10 +1776,17 @@ padding: 0;
   color: #98DBDF;
 }
 
+/* NEWS */
+.news-top table{
+  margin: 30px 30px 30px 30px;
+  /* padding-left: 20%; */
+}
+
+
 
 }
 
 
-}
+
     
   
