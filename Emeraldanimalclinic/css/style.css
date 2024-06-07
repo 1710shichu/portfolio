@@ -1,0 +1,1377 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  /* padding: 0; */
+}
+
+body {
+  font-family: "Source Sans Pro", "Hiragino Kaku Gothic ProN", Meiryo, Arial, sans-serif;
+  line-height: 1.75;
+  letter-spacing: 0.05em;
+  text-align: justify;
+}
+
+p {
+  font-size: 15px;
+  color: #7a6a55;
+  line-height: 1.875;
+  letter-spacing: 0;
+}
+
+header{
+  justify-content: center;
+  margin: auto;
+}
+
+footer{
+  margin-top: 100px;
+}
+h2{
+  text-align: center;
+  display: table;
+  position: relative;
+  margin: auto;
+  padding-bottom: 30px;
+  letter-spacing: 0.08em;
+  color: #5ac5cc;
+  line-height: 1;
+  font-size: 44px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+  background-size: contain;
+  background-image: -webkit-linear-gradient(0deg, #5ac5cc 0%, #2481e1 100%);
+  background-image: -moz-linear-gradient(0deg, #5ac5cc 0%, #2481e1 100%);
+  background-image: -o-linear-gradient(0deg, #5ac5cc 0%, #2481e1 100%);
+  background-image: linear-gradient(90deg, #5ac5cc 0%, #2481e1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 80px;
+  margin-bottom: 30px;
+}
+
+h3{
+  color: #138fd0;
+  text-align: center;
+  margin: auto;
+}
+
+h4{
+  color: #7a6a55;
+  text-emphasis: center;
+  margin: 0;
+  font-size: 2rem;
+}
+
+li{
+  list-style: none;
+}
+
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  position:relative;
+  width: 100%;
+}
+
+#nav-pc > li > span {
+  padding-right: 13%;
+  color: #555555;
+}
+
+nav > a{
+  text-align: center;
+  font-family: "FOT-筑紫A丸ゴシック Std M";
+  letter-spacing: 0.1em;
+  color: #7a6a55;
+  text-decoration: none;
+}
+
+.home::after{
+  content:"HOME";
+  position: relative;
+  display: block;
+  color: #5ac5cc;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+.greet::after{
+  content:"GREET";
+  position: relative;
+  display: block;
+  color: #5ac5cc;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+
+.guide::after{
+  content:"GUIDE";
+  position: relative;
+  display: block;
+  color: #5ac5cc;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+
+.news::after{
+  content:"NEWS";
+  position: relative;
+  display: block;
+  color: #5ac5cc;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+
+.contact::after{
+  content:"CONTACT";
+  position: relative;
+  display: block;
+  color: #5ac5cc;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+.acsess::after{
+  content:"ACSESS";
+  position: relative;
+  display: block;
+  color: #5ac5cc;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+
+
+/* お知らせ*/
+
+#index-news{
+  padding-top: 64px;
+  padding-bottom: 64px;  
+}
+
+
+#index-news{
+    background:url(images/index/background2.png) ;  
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: 0%;
+    background-position-x: center;
+    background-position-y: bottom;
+    background-position: right;
+  
+  }
+  
+
+
+#index-whichanimals{
+  background:url(images/index/background1.png) ;  
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: -11%;
+  /* background-position-x: center; */
+  background-position-y: 23%;
+
+}
+
+
+
+#news-message li{
+  padding: 20px;
+  margin: 20px;
+  border-bottom: 1px dashed;
+}
+
+#index-news #news-message  li span{
+  margin-right: 13%;
+  color: #7a6a55;
+}
+
+#index-news #news-message  li a{
+  margin-right: 13%;
+  color: #7a6a55;
+  text-decoration: none;
+  overflow-wrap:normal;
+}
+
+#news-a{
+  display: flex;
+  display: -ms-flex;
+  justify-content: center;
+  justify-content: -ms-center;
+  align-items: center;
+  align-items: -ms-center;
+  position: relative;
+  width: 120px;
+  height: 35px;
+  line-height: 1;
+  font-size: 14px;
+  letter-spacing: 0;
+  padding: 3px 5px 0 0;
+  background-image: linear-gradient(90deg, #5ac5cc 0%, #2481e1 100%);
+  border-radius: 35px;
+  color: #fff;
+  box-sizing: border-box;
+  margin: 0 60%;
+}
+
+#news-messagge > li{
+  padding: 24px 12px;
+  border-bottom: 1px dashed;
+}
+
+
+#whichanimals-one h3{
+  color: #138fd0;
+  text-align: center;
+}
+
+#whichanimals-one h4{
+  color: #7a6a55;
+  text-align: center;
+}
+/* 対象動物 */
+#index-whichanimals{
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+/* .whichanimals-img {
+  display: flex;
+  justify-content: space-evenly;
+} */
+
+#whichanimals-one > img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* 診療 */
+table {
+  margin: 10px;
+  padding: 10px;
+  width: 100%;
+  table-layout: auto;
+}
+
+#index-medical{
+  background:url(images/index/background2.png) ;  
+  background-size: 21%;
+  background-repeat: no-repeat;
+  background-position: 0%;
+  background-position-x: right;
+  background-position-y: bottom;
+
+}
+
+
+.medical-img{
+  margin: auto;
+  width: 100%;
+}
+
+.medical-h3{
+  margin: auto;
+  width: 100%;
+  color: #138fd0;
+  text-align: center;
+}
+
+.medical-p{
+  margin: auto;
+  width: 100%;
+  color: #7a6a55
+  ;
+}
+
+#index-medical{
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+
+
+tr {
+  vertical-align: top;
+}
+
+
+
+.a-reserve{
+  width: 200px;
+  height: 45px;
+  text-align: center;
+  line-height: 1; 
+  letter-spacing: 0;
+  padding: 14px 5px 0 0;
+  background-image: linear-gradient(90deg, #5ac5cc 0%, #2481e1 100%);
+  border-radius: 35px;
+  color: #fff;
+  box-sizing: border-box;
+  position: relative;
+  margin: auto auto;
+  display: block;
+  text-decoration: none;
+  /* margin:5%; */
+  /* position: absolute; */
+  /* margin-left: 80px; */
+}
+
+#footer-left ul{
+  text-align: center;
+  padding-left: 0;
+}
+
+#footer-left a{
+  text-align: center;
+}
+
+
+
+#header-top-left{
+  width: 100%;
+}
+
+.copy{
+  width: 100%;
+  height: 60px;
+  background-color: #98DBDF;
+  text-align: center;
+  line-height: 4;
+}
+
+footer > p {
+  color: #fff;
+  margin: auto;
+  
+}
+
+
+
+/* CONTACT */
+
+/* お問い合わせ */
+#contact{
+  margin: 80px auto 80px auto;
+
+  background:url(images/index/background1.png) ;  
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: 0%;
+  background-position-x: left;
+  background-position-y: bottom;
+
+}
+
+#contact form{
+  margin: auto auto auto 25%;
+
+  background:url(images/index/background2.png) ;  
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: 0%;
+  background-position-x: right;
+  background-position-y: bottom;
+
+}
+/* 外枠 */
+#contact form div{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+}
+
+/* 左列の見出し */
+.contact-heading{
+  width: 240px;
+  align-items: center;
+}
+
+.contact-label{
+  font-weight: bold;
+  color: #7a6a55;
+}
+
+.contact-span{
+  color: #fff;
+  background-color: #822929;
+  padding: 0px 7px;
+  margin: 0 0 0 20px;
+  font-weight: bold;
+}
+
+#contact form div label{
+  color: #7a6a55;
+  padding: 0 10px 0 0; 
+}
+
+/* テキストボックス */
+.contact-text{
+  /* border:0 0 0 0; */
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom-width: 1px;
+  border-bottom-color: #f7f7f7;
+  border-bottom-style: solid;
+  background-color: #f7f7f7;
+}
+
+
+/* 送信ボタン */
+
+.btn-submit input[type="submit" ]{
+      background-color: transparent;
+     border: none;
+     /* position: absolute; */
+     margin: 0 75px;
+    
+}
+
+.text-submit{
+  font-size: 20px;
+  display: flex;
+    display: -ms-flex;
+    justify-content: center;
+    justify-content: -ms-center;
+    align-items: center;
+    align-items: -ms-center;
+    position: relative;
+    width: 215px;
+    height: 45px;
+    line-height: 1;
+    letter-spacing: 0;
+    padding: 0 5px 3px 0;
+    transition: ease-in-out 0.2s;
+    background-image: linear-gradient(90deg, #5ac5cc 0%, #2481e1 100%);
+    border-radius: 35px;
+    color: #fff;
+    font-family: "FOT-筑紫A丸ゴシック Std M";
+    box-sizing: border-box;
+    /* text-align: center; */
+}
+
+/* ACSESS */
+#acsess-acsess{
+  margin:80px auto 80px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background:url(images/index/background1.png) ;  
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: 0%;
+  background-position-x: -9%;
+  background-position-y: 0%;
+
+}
+
+
+#acsess-clinicinfo{
+  margin: 80px auto 80px auto;
+
+  background:url(images/index/background2.png) ;  
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: 0%;
+  background-position-x: right;
+  background-position-y: bottom;
+
+}
+
+.clinicinfo{
+  display: flex;
+  flex-direction: column;
+}
+
+.adress-map{
+  position: relative;
+}
+
+.adress-map ul{
+  margin: 15px;
+}
+
+.adress-map li{
+  padding: 25px 0 50px 0;
+  border-bottom: 1px dashed #E5E6EF;
+}
+
+.adress-map li:first-child{
+  padding: 10px 0 40px 0;
+} 
+
+.adress-map dt{
+  float: left;
+  box-sizing: border-box;
+  width: 40%;
+  padding-left: 200px;
+  font-family: "FOT-筑紫A丸ゴシック Std M";
+  color: #138fd0;
+}
+
+.adress-map dd{
+  float: left;
+  color: #7a6a55;t
+}
+
+
+#acsess-info p{
+  color: #7a6a55;
+}
+
+
+#acsess-info h3::before{
+  content: url(images/chui.png);
+  display: inline-block;
+  transform: scale(0.7);
+  padding-bottom: 20px;
+}
+
+/* GREET */
+.greet-title{
+  margin: 80px 5% 80px 5%;
+  padding: 1%;
+}
+
+
+#greet-box{
+  display: flex;
+  justify-content: center;
+}
+
+.greet-exp{
+  width: 250px;
+  margin: 10%;
+
+}
+
+
+#greet-policy-exp-01 h3{
+  position: relative;
+  left: -8px;
+  display: block;
+  color: #1290d0;
+  font-family: adobe-garamond-pro, serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 100px;
+  line-height: 1;
+  letter-spacing: 0;
+  text-align: left;
+}
+#greet-policy-exp-01 h4{
+  color: #1290d0;
+  font-size: 30px;
+  line-height: 1.56;
+  font-feature-settings: "palt";
+  letter-spacing: 0.1em;
+  font-family: "FOT-筑紫A丸ゴシック Std M";
+}
+
+#greet-policy-exp-02 h3{
+  position: relative;
+  left: -8px;
+  display: block;
+  color: #5BB2DB;
+  font-family: adobe-garamond-pro, serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 100px;
+  line-height: 1;
+  letter-spacing: 0;
+  text-align: right;
+}
+#greet-policy-exp-02 h4{
+  color: #5BB2DB;
+  text-align: right;
+  font-size: 30px;
+  line-height: 1.56;
+  font-feature-settings: "palt";
+  letter-spacing: 0.1em;
+  font-family: "FOT-筑紫A丸ゴシック Std M";
+
+}
+
+.greet-policy-p{
+  text-align: right;
+}
+
+
+#greet-policy-exp-03 h3{
+  position: relative;
+  left: -8px;
+  display: block;
+  color: #09b7c2;
+  font-family: adobe-garamond-pro, serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 100px;
+  line-height: 1;
+  letter-spacing: 0;
+  text-align: left;
+} 
+#greet-policy-exp-03 h4{
+  color: #09b7c2;
+  font-size: 30px;
+  line-height: 1.56;
+  font-feature-settings: "palt";
+  letter-spacing: 0.1em;
+  font-family: "FOT-筑紫A丸ゴシック Std M";
+}
+
+.greet-policy-exp{
+  margin-bottom: 66px;
+}
+
+.cp-img ul li:nth-child(2){
+  margin: 0 10px;
+}
+
+/* WHICHIANIMALS */
+
+#animals{
+  margin: 80px 0 80px 0;
+ padding: 10px 40px 0px 40px;
+
+ background:url(images/index/background1.png) ;  
+ background-size: 32%;
+ background-repeat: no-repeat;
+ background-position: 0%;
+ background-position-x: 0;
+ background-position-y: center;
+}
+
+#animals > div{
+  display: flex;
+  margin-top: 40px;
+}
+.animals-h3dog{
+  font-size: 35px;
+}
+.animals-h3rat{
+  font-size: 35px;
+}
+.animals-h3cat{
+  font-size: 35px;
+}
+.animals-h3bird{
+  font-size: 35px;
+}
+
+.animals-left{
+  width: 50%;
+  text-align: center;
+}
+.animals-right{
+  width: 50%;
+  margin-top: 80px;
+  text-align: center;
+
+  background:url(images/index/background2.png) ;  
+  background-size: 43%;
+  background-repeat: no-repeat;
+  background-position: 0%;
+  background-position-x: right;
+  background-position-y: center;
+
+}
+
+.animals-one{
+  border: solid 2px skyblue;
+  padding: 3px;
+  margin: 0 10px 0 10px;
+}
+
+.animals-photo{
+  width: 70%;
+}
+
+
+
+.animals-warm ::before{
+  content: url(images/chui.png);
+  /* display: center; */
+  transform: scale(0.7);
+  padding-bottom: 20px;
+}
+
+.animals-warm{
+text-align: center;
+padding-top: 30px;
+font-size: 25px;
+}
+
+
+
+#welcometo-top{ 
+  margin: 80px auto 80px auto;
+  padding: 30px;
+} 
+
+
+/* NEWS */
+#news{
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.nesw-img{
+  margin: 0 20px 0 0;
+}
+.news-date{
+  color: #98DBDF;
+  font-weight: 100S;
+  font-size: 24px;
+  display: block;
+}
+.news-title{
+  font-size: 28px;
+  font-weight: 200;
+  color: #4b4b4b;
+}
+
+.news-topic{
+  margin: 0;
+}
+
+.medical-tr{
+  text-align: center;
+}
+
+#news{
+  background:url(images/index/background1.png) ;  
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: 0%;
+  background-position-x: right;
+  background-position-y: bottom;
+}
+
+.news-top{
+  background:url(images/index/background2.png) ;  
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: 0%;
+  background-position-x: left;
+  background-position-y: bottom;
+}
+
+#footer-adress{
+  margin-bottom: 30px;
+}
+
+
+/*================
+PC用のスタイル
+=================*/
+/* 画面幅が768px以上のとき */
+@media screen and (min-width: 1010px) {
+  /* PC用のスタイルを指定する */
+  
+  
+  /* 横幅設定 */
+  body {
+    /* max-width: 1080px; */
+    max-width: auto;
+    min-width: 960px;
+    margin: 0 auto 0 auto;
+  }
+
+#header-top{
+  margin: 2% 10%;
+  padding: 10px auto;
+  display: flex;
+}
+
+ 
+#top-image img{
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+.whichanimals-img {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+
+#nav-pc{
+  width: 1052px;
+  /* height: 232px; */
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.carouselImg{
+  position: relative;
+  margin: auto;
+  width: 100%;
+  -webkit-animation: anime 1.8s 0s linear;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  /* height: auto; */
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+}
+
+
+#news-message{
+  width: 1052px;
+  margin: auto;
+}
+
+.whichanimals-img {
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer-info{
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  margin: auto;
+}
+
+#footer-day{ 
+  width: 80%;
+  margin-top: 30px;
+  margin-left: 50px;
+  padding-top: 10px;
+  padding-left: 10px;
+} 
+
+#footer-left{
+  width: 60%;
+}
+
+.contact-textarea{
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom-width: 1px;
+  border-bottom-color: #f7f7f7;
+  border-bottom-style: solid;
+  background-color: #f7f7f7;
+  width: 400px;
+  height: 200px;
+}
+
+
+/* ACSESS */
+#acsess-info{
+  margin: 80px auto 80px auto;  
+  width: 810px;
+  background-color: #E2F2F4;
+  padding: 40px;
+}
+#clinicphoto{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.greet-title-p{
+  margin: 80px 10% 80px 10%;
+  background:url(images/index/background3.png) ;  
+  background-size: 90%;
+  background-repeat: no-repeat;
+}
+
+#greet-box{
+  background:url(images/index/background1.png),url(images/index/background2.png);  
+  background-size: 30%, 30%;
+  background-repeat: no-repeat,no-repeat;
+  background-position: 0%, right;
+  background-position-x: center,right;
+  background-position-y: bottom, top;
+
+}
+
+.cp-img{
+  width: 33%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cp-img2{
+  /* width: 33%; */
+  display: flex;
+  justify-content: space-between;
+  /* margin: 0 30px 0 30px; */
+}
+
+.my_container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 200px;
+}
+
+.way_boxbox01{
+  text-align: center;
+  position: relative;
+  width: 25%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.way_boxbox02{
+  text-align: center;
+  position: relative;
+  width: 25%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.way_boxbox03{
+  text-align: center;
+  position: relative;
+  width: 25%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.way_boxbox04{
+  text-align: center;
+  position: relative;
+  width: 25%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.way_number{
+  font-size: 10rem;
+    color: #BADFDB;
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 160px;
+    line-height: 0;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    opacity: 50%;
+}
+
+.way_boxbox0nth img {
+  position: absolute;
+  top: 15%;
+  left: 20%;
+  z-index: 2;
+  width: 70%;
+  max-width: 200px;
+  height: auto;
+}
+
+#welcometo-top ul{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 4%;
+}
+#welcometo-top ul li{
+  text-align: center;
+}
+
+.way_box01_responsive{
+  display: none;
+  
+}
+.way_box02_responsive{
+  display: none;
+}
+.way_box03_responsive{
+  display: none;
+}
+.way_box04_responsive{
+  display: none;
+}
+
+/* NEWS */
+.news-top table{
+  margin: 30px 80px 30px 80px;
+  padding-left: 20%;
+}
+
+.news-top{
+  width: 680px;
+  float: left;
+}
+
+.news-aside{
+  width: 260px;
+  float: right;
+}
+.news-aside div{
+  margin-bottom: 30px;
+}
+.news-aside h3{
+  padding: 10px;
+  background: #7a6a55;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 0;
+}
+.news-aside ul{
+  padding: 20px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.news-aside ul li{
+  padding-bottom: 10px;
+}
+.news-table{
+  width: 90%;
+}
+
+
+}
+/*====================
+スマートフォン用のスタイル
+=====================*/
+/* 横幅が767pxまでの場合 */
+@media (max-width: 1010px) {
+  
+  #header-top {
+    margin: 3% 10%;
+      /* margin: 2% 2%; */
+      padding: 10px auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+  }
+
+  #top-image img{
+   width: 100%;
+    height: 16em;
+    text-align: center;
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    margin: 0 auto;
+  }
+  
+  .whichanimals-img {
+    /* display: flex; */
+    /* justify-content: space-evenly; */
+    text-align: center;}
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 80%;
+  }  
+
+  #nav-pc {
+    margin: auto;
+    box-sizing: border-box;
+  }
+
+  .footer-info {
+    width: 100%;
+    margin: auto;}
+  
+  .carouselImg{
+    position: relative;
+    margin: auto;
+    width: 80%;
+    -webkit-animation: anime 1.8s 0s linear;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    height: auto;
+}
+  #news-message{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+  }
+
+
+  .animals-photo{
+    width: 100%;
+  }
+  
+  .medical-p{
+    margin: auto;
+    width: 100%;
+    color: #7a6a55;
+    font-size: 12px;
+}
+ .medical-tabel tr img{
+    width: 30px;
+    }
+
+
+  .footer-info{
+      margin: 3% 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+  
+      }
+    
+  #footer-day{ 
+  width: 80%;
+
+} 
+
+#footer-reserve{
+    text-align: center;
+  }
+
+#footer-right{
+  text-align: center;
+}
+
+.contact-textarea{
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom-width: 1px;
+  border-bottom-color: #f7f7f7;
+  border-bottom-style: solid;
+  background-color: #f7f7f7;
+  width: 200px;
+  height: 200px;
+}
+    
+    /* 外枠 */
+#contact form div{
+  /* display: flex; */
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+}
+
+/* ACSESS */
+#acsess-info{
+  margin: 80px auto 80px auto;  
+  /* width: 810px; */
+  background-color: #E2F2F4;
+  padding: 40px;
+}
+
+.adress-map{
+  /* position: relative; */
+}
+
+.adress-map ul{
+  /* margin: 15px; */
+}
+
+.adress-map li{
+  padding: 25px 0 80px 0;
+  border-bottom: 1px dashed #E5E6EF;
+}
+
+.adress-map li:first-child{
+  padding: 10px 0 40px 0;
+} 
+
+.adress-map dt{
+  float: left;
+  box-sizing: border-box;
+  width: 50%;
+  padding-left: 1px;
+  font-family: "FOT-筑紫A丸ゴシック Std M";
+  color: #138fd0;
+}
+
+.adress-map dd{
+  float: left;
+  color: #7a6a55;
+}
+
+.acsess-map img{
+  width: 100%;
+}
+
+
+/* GREET */
+#greet-img{
+  width: 20%;
+}
+
+#greet-img img{
+  display: none;
+}
+
+.cp-img{
+  width: 100%;
+  margin: 0 30px 0 30px;
+  
+}
+
+.greet-exp{
+  width: 250px;
+  margin: 10%;
+}
+
+.greet-exp p{
+  color: #241f19;
+}
+#greet-box{
+  display: flex;
+  justify-content: center;
+  margin: 80px 10% 80px 10%;
+  background:url(images/index/greet-greeting.jpg) ;  
+  background-size: 100%;
+  background-repeat: no-repeat;
+  opacity: 50%;
+}
+
+.greet-title-p{
+  margin: 80px 10% 80px 10%;
+  background:url(images/index/background3.png) ;  
+  background-size: 133%;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-position: 0%;
+  background-position-x: center;
+
+}
+
+
+.cp-img{
+margin: 0;
+padding: 0;
+}
+
+.cp-img2{
+  margin: 0;
+  padding: 0;
+}
+
+.cp-img ul{
+  margin: 0;
+  padding: 0;
+  /* display: flex; */
+  /* flex-direction: column; */
+}
+
+.cp-img2 ul{
+  margin: 0;
+  padding: 0;
+}
+
+.my_container{
+  display: none;
+}
+
+
+
+.way_number{
+  font-size: 3rem;
+  color: #BADFDB;
+  font-weight: 600;
+  text-align: left;
+  margin-bottom: 20px;
+  line-height: 0;
+  position: relative;
+  /* top: 45px; */
+  left: 0;
+  /* left: -50%; */
+}
+
+
+.way_box01_responsive img{ 
+   width: 70%;
+   left: 40%;
+   position: relative;
+   left: 50%;
+   z-index: 2;
+   max-width: 200px;
+   height: auto;
+}
+.way_box02_responsive img{
+   left: 40%;
+   position: relative;
+   z-index: 2;
+   width: 70%;
+   max-width: 200px;
+   height: auto;
+}
+.way_box03_responsive img{
+  left: 40%;
+  position: relative;
+  z-index: 2;
+  width: 50%;
+  max-width: 200px;
+  height: auto;
+ 
+}
+.way_box04_responsive img{
+  left: 40%;
+   position: relative;
+   z-index: 2;
+   width: 50%;
+   max-width: 200px;
+   height: auto;
+} 
+
+#welcometo-top ul li{
+  margin: 40px 10px 40px 10px;
+}
+
+#welcometo-top ul{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto 0 auto;
+  padding: 0 0 0 0;
+  padding-left: 10%;
+
+}
+
+
+
+/* NEWS */
+.news-top table{
+  margin: 30px 30px 30px 30px;
+  /* padding-left: 20%; */
+}
+
+#news{
+  width: 100%;
+}
+
+.news-photo{
+  width: 100%;
+}
+.news-aside{
+  margin-top: 80px;
+}
+
+#news{
+  padding: 30px;
+}
+
+
+}
+
+
+
+    
+  
