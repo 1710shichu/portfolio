@@ -200,7 +200,7 @@ nav > a{
 }
 
 #index-news #news-message  li a{
-  margin-right: 13%;
+  /* margin-right: 13%; */
   color: #7a6a55;
   text-decoration: none;
   overflow-wrap:normal;
@@ -267,6 +267,7 @@ table {
   /* width: 100%; */
   table-layout: auto;
 }
+
 
 #index-medical{
   background:url(../images/index/background2.png) ;  
@@ -874,6 +875,10 @@ PC用のスタイル
   width: 60%;
 }
 
+.medical-tabel{
+  width: 100%;
+}
+
 .contact-textarea{
   border-top: 0;
   border-left: 0;
@@ -1039,7 +1044,7 @@ PC用のスタイル
   width: 680px;
   float: left;
 }
-
+.entry-content{}
 
 .news-aside{
   width: 260px;
@@ -1066,6 +1071,10 @@ PC用のスタイル
 }
 .news-table{
   width: 90%;
+}
+
+.slidermin{
+  display: none;
 }
 
 
@@ -1403,6 +1412,22 @@ padding: 0;
 #news{
   padding: 30px;
 }
+.entry-content img{
+  width: 100%;
+  object-fit: cover;
+  padding: 30px;
+}
+.gmap-iframe{
+  width: 100%;
+}
+#news-message ul{
+  padding: 0;
+}
+
+.slidermax{
+  display: none;
+}
+
 
 
 }

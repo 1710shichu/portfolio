@@ -1,8 +1,13 @@
 <?php get_header(); ?>
 
   <main>
-
+  <div class=slidermax>
     <?php xo_slider( 16 ); ?>
+    </div>
+  <div class=slidermin>
+   <?php xo_slider( 98 ); ?>
+  </div>
+    
     
     <section id="carousel-section">
       

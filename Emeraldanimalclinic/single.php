@@ -15,17 +15,9 @@
              <div class="news-top">
                <!-- <p class="entry-date">2025年3月26日</p> -->
                <p class="entry-date"><?php echo post_custom('date') ?></p>
-               <!-- <h3 class="entry-title">【フィラリア予防】【狂犬病予防接種】の時期になります</h3> -->
                <h3 class="entry-title"><?php the_title(); ?></h3>
                <div class="entry-content">
-                <!-- <p>
-                  今年は、3月に入ってから肌寒い日が続き桜の開花が遅れていますが、<br>
-                  春はもうそこまで来ていますね。<br>
-                  春は、一年で一番大事な予防のシーズン、狂犬病ワクチン接種、フィラリア、<br>
-                  ノミ・マダニの予防対策は欠かせません。<br>
-                当院では、2024年のフィラリア健診は狂犬病予防と合わせて、<br>
-                4月1日（月）から開始いたします。
-                </p> -->
+              
                 <p><?php the_content(); ?>
                 </p>
                 
