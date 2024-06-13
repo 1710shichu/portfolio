@@ -1,30 +1,11 @@
 <?php get_header(); ?>
 
   <main>
-    <!-- <section id="main-visual"> -->
-      <!-- <img id=calcat src="images/index/carousel1.jpg" alt="カルーセル猫"> -->
-    <!-- </section> -->
 
     <?php xo_slider( 16 ); ?>
     
     <section id="carousel-section">
-      <div class="carousel">
-        <div>
-          <!-- <img class="carouselImg" src="images/index/carousel11.png"> -->
-          <img class="carouselImg" src="<?php echo get_template_directory_uri(); ?>/images/index/carousel11.png">
-        </div>
-        <div>
-          <!-- <img class="carouselImg" src="images/index/carousel2.jpg"> -->
-          <img class="carouselImg" src="<?php echo get_template_directory_uri(); ?>/images/index/carousel2.jpg">
-        </div>
-        <div>
-          <!-- <img class="carouselImg" src="images/index/carousel3.jpg"> -->
-          <img class="carouselImg" src="<?php echo get_template_directory_uri(); ?>/images/index/carousel3.jpg">
-        </div>
-        <div>
-          <!-- <img class="carouselImg" src="images/index/carousel4.jpg"> -->
-          <img class="carouselImg" src="<?php echo get_template_directory_uri(); ?>/images/index/carousel4.jpg">
-        </div>
+      
        
       </div>
     </section>   
@@ -32,7 +13,7 @@
     <section id="index-news">
       <div id="news-main">
         <h2>NEWS</h2>
-        <a id="news-a" href="news.html">一覧を見る</a>
+        <a id="news-a" href="<?php echo home_url(); ?>/category/news">>一覧を見る</a>
         
         <div id="news-message">
           

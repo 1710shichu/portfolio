@@ -61,8 +61,6 @@
             <p class="way_number">02</p>
             <!-- <img src="images/index/WELCOMETO/02.png" width="200" height="250" alt="問診表記入"> -->
             <img src="<?php echo get_template_directory_uri(); ?>/images/index/WELCOMETO/02.png" width="200" height="250" alt="問診表記入">
-            <!-- <img src="images/index/WELCOMETO/02.png" width="200" height="250" alt="問診表記入"> -->
-            <img src="<?php echo get_template_directory_uri(); ?>/images/index/WELCOMETO/02.png" width="200" height="250" alt="問診表記入">
           </div>
           <div class="way_boxbox03">
             <p class="way_number">03</p>

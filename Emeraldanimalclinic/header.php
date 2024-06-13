@@ -5,15 +5,15 @@
   <meta name="description" content="Emeral動物病院は地域に寄り添う">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EmeraldAnimalClinic</title>
+  <!-- slickの読み込み -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  
   <!-- <link rel="stylesheet" href="style.css"> -->
   <!-- <link rel="stylesheet" href="css/style.css"> -->
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css">
  
-  <!-- slickの読み込み -->
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-  
   <?php wp_head(); ?>
 </head>
 <body>
@@ -42,7 +42,7 @@
         <!-- <a class="news" href="news.html">お知らせ</a> -->
         <a class="news" href="<?php echo home_url(); ?>/category/news">お知らせ</a>
         <!-- <a class="contact" href="contact.html">問い合わせ</a> -->
-        <a class="contact" href="<?php echo home_url(); ?>/contact.html">問い合わせ</a>
+        <a class="contact" href="<?php echo home_url(); ?>/contact">問い合わせ</a>
         <!-- <a class="acsess" href="acsess.html">アクセス</a> -->
         <a class="acsess" href="<?php echo home_url(); ?>/acsess">アクセス</a>
       </nav>

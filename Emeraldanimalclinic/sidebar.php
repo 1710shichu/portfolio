@@ -4,10 +4,9 @@
         <span>月別アーカイブ</span>
       </h3>
       <ul>
-        <!-- <li><a href="">2024年4月</a></li>
-        <li><a href="">2024年3月</a></li>
-        <li><a href="">2024年2月</a></li>
-        <li><a href="">2024年1月</a></li> -->
+        <ul class="archive-list">
+            <?php wp_get_archives('post_type=post&type=monthly&show_post_count=1'); ?>
+          </ul>
       </ul> 
     </div>
 </aside>
