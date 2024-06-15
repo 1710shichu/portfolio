@@ -69,25 +69,25 @@
       <!-- <div id="whichanimals-main"> -->
         <h2 class="whichanimals-h2">WHICH ANIMALS</h2>
         <div class="whichanimals-img">
-          <div id="whichanimals-one">
+          <div class="whichanimals-one">
             <!-- <img src="images/index/animals-dog.jpg" alt="犬"> -->
             <img src="<?php echo get_template_directory_uri(); ?>/images/index/animals-dog.jpg" alt="犬">
             <h3>DOG</h3>
             <h4>イヌ</h4>
           </div>
-          <div id="whichanimals-one">
+          <div class="whichanimals-one">
             <!-- <img src="images/index/animals-cat.jpg" alt="猫"> -->
             <img src="<?php echo get_template_directory_uri(); ?>/images/index/animals-cat.jpg" alt="猫">
             <h3>CAT</h3>
             <h4>猫</h4>
           </div>
-          <div id="whichanimals-one">
+          <div class="whichanimals-one">
             <!-- <img src="images/index/animals-rat.jpg" alt="ゲッ歯類"> -->
             <img src="<?php echo get_template_directory_uri(); ?>/images/index/animals-rat.jpg" alt="ゲッ歯類">
             <h3>RAT&RABBIT</h3>
             <h4>げっ歯類＆ウサギ</h4>
           </div>
-          <div id="whichanimals-one">
+          <div class="whichanimals-one">
             <!-- <img src="images/index/animals-bird.jpg" alt="鳥類"> -->
             <img src="<?php echo get_template_directory_uri(); ?>/images/index/animals-bird.jpg" alt="鳥類">
             <h3>BIRD</h3>

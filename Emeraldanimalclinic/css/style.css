@@ -1,7 +1,7 @@
 *{
   box-sizing: border-box;
   margin: 0;
-  /* padding: 0; */
+  padding: 0;
 }
 
 body {
@@ -233,12 +233,12 @@ nav > a{
 }
 
 
-#whichanimals-one h3{
+.whichanimals-one h3{
   color: #138fd0;
   text-align: center;
 }
 
-#whichanimals-one h4{
+.whichanimals-one h4{
   color: #7a6a55;
   text-align: center;
 }
@@ -253,7 +253,7 @@ nav > a{
   justify-content: space-evenly;
 } */
 
-#whichanimals-one > img {
+.whichanimals-one > img {
   width: 200px;
   height: 200px;
   object-fit: cover;
@@ -262,7 +262,7 @@ nav > a{
 
 /* 診療 */
 table {
-  margin: 10px;
+  /* margin: 10px; */
   padding: 10px;
   /* width: 100%; */
   table-layout: auto;
@@ -431,6 +431,8 @@ footer > p {
   border-bottom-color: #f7f7f7;
   border-bottom-style: solid;
   background-color: #f7f7f7;
+  font-size: 18px;
+  padding: 18px;
 }
 
 
@@ -503,6 +505,7 @@ footer > p {
 
 .adress-map{
   position: relative;
+  margin: 10px 0px 10px 100px
 }
 
 .adress-map ul{
@@ -789,6 +792,14 @@ font-size: 25px;
   width: 100%;
 }
 
+.news-tdimg{
+  width: 8em;
+}
+.clearfix::after{
+  content:'';
+  display: block; 
+  clear:both;
+}
 /*================
 PC用のスタイル
 =================*/
@@ -827,10 +838,12 @@ PC用のスタイル
 
 
 #nav-pc{
-  width: 1052px;
+  /* width: 1052px; */
   /* height: 232px; */
   margin: auto;
   box-sizing: border-box;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .carouselImg{
@@ -848,7 +861,7 @@ PC用のスタイル
 
 
 #news-message{
-  width: 1052px;
+  /* width: 1052px; */
   margin: auto;
 }
 
@@ -859,8 +872,9 @@ PC用のスタイル
 .footer-info{
   display: flex;
   justify-content: space-between;
-  width: 1200px;
+  /* width: 1200px; */
   margin: auto;
+  max-width: 1200px;
 }
 
 #footer-day{ 
@@ -921,8 +935,8 @@ PC用のスタイル
 
 }
 .greet-title{
-  margin: 80px 5% 80px 5%;
-  padding: 1%;
+  /* margin: 80px 5% 80px 5%; */
+  /* padding: 1%; */
 }
 
 #clinicphoto{
@@ -1054,11 +1068,12 @@ PC用のスタイル
   margin-bottom: 30px;
 }
 .news-aside h3{
-  padding: 10px;
   background: #7a6a55;
   color: #ffffff;
   text-align: center;
   margin-bottom: 0;
+  padding-top: 15px;
+  padding-bottom: 16px;
 }
 .news-aside ul{
   padding: 20px;
@@ -1212,6 +1227,7 @@ PC用のスタイル
 
 .adress-map{
   /* position: relative; */
+  margin: 10px 40px 10px 40px;
 }
 
 .adress-map ul{
@@ -1426,6 +1442,17 @@ padding: 0;
 
 .slidermax{
   display: none;
+}
+.news-aside h3 {
+  background: #7a6a55;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 0;
+  padding-top: 15px;
+  padding-bottom: 16px;
+}
+.news-aside ul{
+ text-align: center;
 }
 
 

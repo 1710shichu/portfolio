@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="jS">
+<html lang="js">
 <head>
   <meta charset="UTF-8">
   <meta name="description" content="Emeral動物病院は地域に寄り添う">

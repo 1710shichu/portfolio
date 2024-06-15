@@ -14,7 +14,7 @@
                 
                 <?php while(have_posts()) : the_post(); ?>
                   <tr>
-                    <td>
+                    <td class=news-tdimg>
                       <img class="news-img" src="<?php echo get_template_directory_uri(); ?>/images/icon.png" alt="rogo">
                     </td>
                     <td>
