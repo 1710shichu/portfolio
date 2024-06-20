@@ -22,28 +22,33 @@
     <!-- ロゴ -->
     <div id="header-top">
       <div id="header-top-left">
-       <!-- <a href="index.html" id="header-logo"><img src="images/logo.png" alt="トップページに戻る"></a> -->
+        <!-- <a href="index.html" id="header-logo"><img src="images/logo.png" alt="トップページに戻る"></a> -->
        <a href="<?php echo home_url(); ?>" id="header-logo"><img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="トップページに戻る"></a>
        <!-- <img id="header-adress" src="images/adress.png" alt="住所と電話番号"> -->
        <img id="header-adress" src="<?php echo get_template_directory_uri(); ?>/images/adress.png" alt="住所と電話番号">
       </div>
       <div id="header-top-right"></div>
-       <a href="" class="a-reserve" alt="予約へ">予約</a>
-      </div>
+      <a href="" class="a-reserve" alt="予約へ">予約</a>
     </div>
-      <!-- PC用ナビゲーション -->
-      <nav id="nav-pc">
-        <!-- <a class="home" href="index.html">ホーム</a> -->
-        <a class="home" href="<?php echo home_url(); ?>">ホーム</a>
-        <!-- <a class="greet" href="greet.html">当院について</a> -->
-        <a class="greet" href="<?php echo home_url(); ?>/greet">当院について</a>
-        <!-- <a class="guide" href="guide.html">診療案内</a> -->
-        <a class="guide" href="<?php echo home_url(); ?>/guide">診療案内</a>
-        <!-- <a class="news" href="news.html">お知らせ</a> -->
-        <a class="news" href="<?php echo home_url(); ?>/category/news">お知らせ</a>
-        <!-- <a class="contact" href="contact.html">問い合わせ</a> -->
-        <a class="contact" href="<?php echo home_url(); ?>/contact">問い合わせ</a>
-        <!-- <a class="acsess" href="acsess.html">アクセス</a> -->
-        <a class="acsess" href="<?php echo home_url(); ?>/acsess">アクセス</a>
-      </nav>
+    <!-- PC用ナビゲーション -->
+    <img id="menu-sp" src="<?php echo get_template_directory_uri(); ?>/images/button-menu.png" alt="ナビゲーションを開く" onclick="document.getElementById('nav-pc').style.display = 'block'">
+  <nav id="nav-pc">
+    <img id="close" src="<?php echo get_template_directory_uri(); ?>/images/button-batsu.png" alt="ナビを閉じる" onclick="document.getElementById('nav-pc').style.display = 'none'">
+    <a class="home" href="<?php echo home_url(); ?>">ホーム</a>
+    <a class="greet" href="<?php echo home_url(); ?>/greet">当院について</a>
+    <a class="guide" href="<?php echo home_url(); ?>/guide">診療案内</a>
+    <a class="news" href="<?php echo home_url(); ?>/category/news">お知らせ</a>
+    <a class="contact" href="<?php echo home_url(); ?>/contact">問い合わせ</a>
+    <a class="acsess" href="<?php echo home_url(); ?>/acsess">アクセス</a>
+  </nav>
+ 
+<!--   
+  <nav id=nav-sp>
+     <a class="menu" href="<?php echo home_url(); ?>">ホーム</a> 
+     <a class="menu" href="<?php echo home_url(); ?>/greet">当院について</a>
+     <a class="menu" href="<?php echo home_url(); ?>>/guide">診療案内</a>
+     <a class="menu" href="<?php echo home_url(); ?>/category/news">お知らせ</a>
+     <a class="menu" href="<?php echo home_url(); ?>/contact">問い合わせ</a>
+     <a class="menu" href="<?php echo home_url(); ?>/acsess">アクセス</a>
+  </nav> -->
     </header>
