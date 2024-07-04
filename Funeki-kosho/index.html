@@ -10,19 +10,33 @@
 <meta name="Keywords" content="">
 <meta http-equiv="Content-Style-Type" content="text/css" >
 <link rel="stylesheet" href="style.css">
+<!-- slickの読み込み -->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+
 </head>
 
+<header>
+ 
+  </header>
 <body>
- <header></header>
   <main>
     <section>
      <div id="maintop">
        <div class="mainslider">
-         <img src="images/slider-1.jpg" alt="正面寺">
+         <ul class="slider">
+           <li><img src="images/slider-1.jpg" alt="正面寺"></li>
+           <li><img src="images/slider-2.png" alt="職人"></li>
+           <li><img src="images/slider-3.png" alt="大きい家正面"></li>
+          </ul>
         </div>
-       <div class="mainslider-sm">
-         <img src="images/sm/slider-sm.png" alt="正面寺">
-        </div>
+        <div class="mainslider-sm">
+        <ul class="slider">
+          <li><img src="images/sm/slider-sm.png" alt="正面寺"></li>
+          <li><img src="images/sm/slider-sm2.png" alt="大きい家正面"></li>
+          <li><img src="images/sm/slider-sm3.png" alt="職人"></li>
+        </ul>
+       </div>
         <div class="boxTop">
           <ul class="boxMenu">
             <li class="boxItem">
@@ -50,14 +64,20 @@
       <div class="aboutTOP">
         <div class="aboutImg">
           <div class="aboutLeft">
-            <img src="images/aboutleft.png" alt="">
-          </div>
+            <ul class="fade-img">
+             <li><img src="images/aboutleft.png" alt=""></li> 
+             <!-- <li><img src="images/aboutleft-2.png" alt=""></li>  -->
+            </ul>
+            </div>
           <div class="aboutLeft-sm">
             <img src="images/sm/aboutleft-sm.png" alt="">
           </div>
           <div class="aboutRight">
-            <img src="images/aboutright.png" alt="">
-            <div class="aboutTit">
+            <ul class="fade-img">
+              <li><img src="images/aboutright.png" alt=""></li>
+              <!-- <li><img src="images/aboutright-2.png" alt=""></li> -->
+            </ul>
+              <div class="aboutTit">
               <p class="tit">建築を通じて</p>
               <p class="tit">伝統の技術・文化継承を使命とし</p>
               <p class="tit">次の世代への建物を残す。</p>
@@ -67,17 +87,17 @@
       </div>
     </section>
 
-    <section>
+    <section id="expTxt">
       <div class="expTxt">
         <p>
-          私たちは「文化財建造物保存修理」の経験から得た技術により、<br>
-          社寺建築・歴史的建造物・伝統木構造の既存建物を、傷めることなく修理可能です。<br>
+          私たちは「文化財建造物保存修理」の経験から得た技術により、
+          社寺建築・歴史的建造物・伝統木構造の既存建物を、傷めることなく修理可能です。
           また、伝統的な日本建築を後世に残していけるよう、絶えず技術を磨き、<br>
           若手の育成にも力を入れています。
         </p>
         <div class="expBtn">
           <a class="expbtnBox" href="">
-            <p>舟木工匠</p>
+            <p>舟木工匠について</p>
             <p>About us</p>
           </a>
         </div>
@@ -138,7 +158,7 @@
                 </div>
                </a>
               </li>
-             <li class="columnLi">
+             <li class="columnLi2">
               <a class="columnA" href="">
                 <img src="images/columnShokunin.png" alt="">
                 <div class="boxTxt">
@@ -148,7 +168,7 @@
                 </div>
               </a>
              </li>
-             <li class="columnLi">
+             <li class="columnLi2">
               <a class="columnA" href="">
                 <img src="images/columnIkebana.png" alt="">
                 <div class="boxTxt">
@@ -160,10 +180,12 @@
              </li>
            </ul>
          </div>
+         <div>
+           <a class=ichiran-sf href="">
+             <span class="ichiranBtn-sf">一覧を見る</span>
+           </a>
+         </div>
         </div>  
-        <a class=ichiranA2 href="">
-          <span class="ichiranBtn">一覧を見る</span>
-        </a>
       </div>
     </section>
     
@@ -186,41 +208,71 @@
   </main>
   <footer>
     <div id="footerTop">
-
       <div id="footer">
         <div class="footerleft">
-        <div>
-          <!-- <img src="images/icon-takumi.png" alt=""> -->
+          <div>
+            <p>舟木工匠</p>
+          </div>
+          <div>
+            <span>◎電話でのお問い合わせ</span>
+            <h3>0766-75-3277</h3>
+            <span>受付/9:00-18:00(土日祝定休)</span>
+          </div>
+        </div>
+        <div class="footerright-left">
+          <img src="images/footerIriguchi.png" alt="入口">
+          <p>舟木工匠（Funaki-Kosho）</p>
+          <p>〒939-0351富山県射水市戸破1054</p>
+          <a href="https://maps.app.goo.gl/64EAadVLFihNHr1f7">(map)</a>
+        </div>
+        <div class="fotterright-right">
+          <ul>
+            <li class="item"><a href="">TOP</a></li>
+            <li class="item"><a href="">舟木工匠について</a></li>
+            <li class="item"><a href="">建築実績</a></li>
+            <li class="item"><a href=""></a>お知らせ・読み物</a></li>
+            <li class="item"><a href="">お問い合わせ</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footerTop-sf">
+       <div class="footerBimage">
+        <div class="footerTit">
           <p>舟木工匠</p>
         </div>
-        <span>◎電話でのお問い合わせ</span>
-        <h3>0766-75-3277</h3>
-        <span>受付/9:00-18:00(土日祝定休)</span>
+        <div class="footerTex">
+          <div class="jusho">
+            <p>〒939-0351<br>
+            富山県射水市戸破1054<br>
+            <a href="https://maps.app.goo.gl/64EAadVLFihNHr1f7">(map)</a>
+          </p>
+          </div>
+          <div class="telTex">
+            <p>◎電話でのお問い合わせ</p>
+          </div>
+          <div>
+            <h3>0766-75-3277</h3>
+          </div>
+          <div class="uketuke">
+            <p>受付/9:00-18:00 <br>
+              (土日祝定休)</p>
+          </div>
+        </div>
+       </div>
+     </div>
+        
+      <div class="secFooterCopy">
+        <a href=""><img src="images/icon-insta20.png" alt="インスタグラム"></a>
+        <p>© Funaki Kousho</p>
       </div>
-      
-      <div class="footerright-left">
-        <img src="images/footerIriguchi.png" alt="入口">
-        <p>舟木工匠（Funaki-Kosho）</p>
-        <p>〒939-0351富山県射水市戸破1054</p>
-        <a href="https://maps.app.goo.gl/64EAadVLFihNHr1f7">(map)</a>
-      </div>
-      <div class="fotterright-right">
-        <ul>
-          <li class="item"><a href="">TOP</a></li>
-          <li class="item"><a href="">舟木工匠について</a></li>
-          <li class="item"><a href="">建築実績</a></li>
-          <li class="item"><a href=""></a>お知らせ・読み物</a></li>
-          <li class="item"><a href="">お問い合わせ</a></li>
-        </ul>
-      </div>
-    </div>
-  <div class="secFooterCopy">
-    <a href=""><img src="images/icon-insta20.png" alt="インスタグラム"></a>
-    <p>© Funaki Kousho</p>
   </div>
-</div>
-  
-  </footer>
+
+</footer>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+<script src="script.js"></script>
+<!-- slickの読み込み -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 </body>
 

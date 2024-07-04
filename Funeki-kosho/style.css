@@ -29,7 +29,7 @@ li{
   list-style: none;
 }
 
-.mainslider img{
+.slider img{
   width: 100%;
   background: fixed;
 }
@@ -49,13 +49,13 @@ li{
 .logoTate{
   display: flex;
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   z-index: 10;
   display: flex;
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 0;
+  top: 125px;
   left: 0;
   -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
@@ -90,11 +90,7 @@ li{
   margin-top: 30px;
   margin-bottom: 30px;
 }
-.aboutLeft{
-  width: 100%;
-  margin-right: 30px;
-  
-}
+
 .aboutRight{
   width: 100%;
   margin-left: 30px;
@@ -110,7 +106,7 @@ li{
   position: absolute;
   right: 25%;
   /* top: 1700px; */
-  bottom: -35%;
+  bottom: 0%;
 } 
 .aboutTit p{
   -ms-writing-mode: tb-rl;
@@ -119,6 +115,11 @@ li{
   background-color: #ffffff;
   color: #000;
   padding: 20px 2px;
+}
+
+#expTxt{
+  position: relative;
+  margin-top: 10em;
 }
 .tit{
   margin: 3px;
@@ -134,6 +135,7 @@ li{
 .expBtn p{
   margin: 0;
 }
+
 .boxBtn{
   display: flex;
   flex-wrap: wrap;
@@ -146,18 +148,52 @@ li{
   border: solid 1px #ffffff;
   text-align: center;
   align-items: center;
-  width: 560px;
+  width: 38%;
   margin-right: 20px;
-    margin-bottom: 20px;
-    background-color: #0c1620;
-    padding-top: 30px;
-    padding-bottom: 30px;
+  margin-bottom: 20px;
+  /* background-color: #0c1620; */
+  padding-top: 30px;
+  padding-bottom: 30px;
+  position: relative; /* relative位置を指定 */
+  z-index: 0;
+  overflow: hidden;
+  /* background-color: #000060; */
+  
+}
+
+  .Itembtn::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 0;
+    height: 100%;
+    background-color: #ffffff;
+    color: #282b2d;
+    transition: width 0.5s; /* トランジションを指定 */
+  }
+  
+  .Itembtn:hover::before {
+    width: 100%;
+  }
+  
+  .Itembtn a{
+    /* color: #ffffff; */
   }
   .Itembtn a{
     font-size: 16px;
     text-decoration: none;
+    color: #8D8D8D;
   }
   
+  .expbtnBox{
+    text-decoration: none;
+  }
+  .expbtnBox p{
+    color: #8D8D8D;
+  }
   /* 建築実績 */
   #secWorks{
     margin-top: 200px;
@@ -183,9 +219,6 @@ li{
     display: flex;
     align-items: center;
   }
-  .Itembtn a{
-    color: #ffffff;
-  }
   .worksTit h2{
     color: #ffffff;
     font-size: 50px;
@@ -207,7 +240,7 @@ li{
   .columnTit{
     display: flex;
     align-items: center;
-    margin: o auto;
+    margin: 0 auto;
   }
   .columnTit h2{
     font-size: 50px;
@@ -219,7 +252,20 @@ li{
 }
 .columnA{
   text-decoration: none;
+  max-width: 100%;
+  position: relative
+  
+  /* 画像ホバー時拡大 */
 }
+.columnA img{
+  cursor: pointer;
+  height: auto;
+  transition: transform .6s ease;
+}
+
+.columnA:hover img{
+  transform: scale(1.1); /* 拡大 */
+ }
 
 .columnUl{
   display: flex;
@@ -228,11 +274,18 @@ li{
 }
 .columnLi{
   margin: 20px;
+  display: flex;
 }
 .columnLi img{
-  border-radius: 10%;
-  
+  border-radius: 10%; 
 }
+.columnLi2{
+  margin: 20px;
+}
+.columnLi2 img{
+  border-radius: 10%; 
+}
+
 #secColumn{
   padding: 195px 0 200px;
 }
@@ -249,8 +302,8 @@ li{
   align-items: center;
   justify-self: center;
   color: inherit;
-  width: 230px;
-  height: 81px;
+  width: 152px;
+  height: 45px;
   border: 1px solid #0c1620;
   position: absolute;
   top: 12px;
@@ -291,9 +344,6 @@ li{
 }
 #secContact{
   margin: 0;
-}
-.contactTex span{
-  color: #fff;
 }
 
 
@@ -347,7 +397,7 @@ li{
   color: inherit;
 }
 
-.secFooterCopy{
+/* .secFooterCopy{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -355,31 +405,79 @@ li{
   margin-top: 115px;
   margin-left: 80%;
   color: #fff;
-}
-#footerTop{
-  background-color: #0c1620;
-  display: flex;
-  flex-direction: column;
+  } */
+  
+  #footerTop{
+    background-color: #0c1620;
+    display: flex;
+    flex-direction: column;
   margin-top: 200px;
 }
 .footerright-left a{
   text-decoration: none;
   color: #fff;
 }
+.slider{
+  padding: 0;
+}
 
-
-
-
-/*================
-PC用のスタイル
-=================*/
-@media screen and (min-width: 768px) {
-  
-  .mainslider-sm{
-    display: none;
+.slider {
+  /* height: 53vw; */
+  margin-inline: auto;
+  width: 100%;
+}
+.slier img {
+  width: 100%;
+}
+@keyframes zoomUp {
+  0% {
+    transform: scale(1);
   }
-.aboutLeft-sm{
-  display: none;
+  100% {
+    transform: scale(1.15); /* 拡大率 */
+  }
+}
+.add-animation {
+  animation: zoomUp 10s linear 0s normal both;
+
+}
+.contactTex {
+  border: solid 1px #0c1620;
+  padding: 60px 20px;
+  text-align: center;
+  letter-spacing: 5px;
+  display: flex;
+  margin-top: 70px;
+  justify-content: center;
+  font-size: 22px;
+  background: #0c1620;
+  position: relative;
+  text-decoration: none;
+  
+  position: relative; 
+  z-index: 0;
+  overflow: hidden;
+  /* background-color: #ffffff; */
+}
+.contactTex::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 0;
+  height: 100%;
+  background-color: #ffffff;
+  transition: width 0.5s; /* トランジションを指定 */
+}
+
+.contactTex:hover::before {
+  width: 100%;
+}
+.contactTex span{
+  /* color: #fff; */
+  color: #8D8D8D;
 }
 .expBtn{
   width: 500px;
@@ -389,12 +487,93 @@ PC用のスタイル
   border: solid 1px #0c1620;
   text-align: center;
   align-items: center;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  background-color: #ffffff;
 }
+
+.expBtn .expBtnBox{
+  position: relative;
+  z-index: 1;
+}
+
+.expBtn::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 0%;
+  height: 100%;
+  background-color: #282b2d;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+.expBtn:hover::before {
+  width: 100%;
+}
+
+
+/*================
+PC用のスタイル
+=================*/
+@media screen and (min-width: 768px) {
+  
+ .mainslider-sm{
+    display: none;
+  }
+.aboutLeft-sm{
+  display: none;
+}
+
+.expBtn{
+  width: 500px;
+  letter-spacing: 5px;
+  padding: 5px 20px;
+  font-weight: bold;
+  border: solid 1px #0c1620;
+  text-align: center;
+  align-items: center;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.expBtn .expBtnBox{
+  position: relative;
+  z-index: 1;
+}
+
+.expBtn::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 0%;
+  height: 100%;
+  background-color: #282b2d;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+.expBtn:hover::before {
+  width: 100%;
+}
+
+
+
 .secWorks{
   position:absolute;
   margin-top: 0;
-  margin: 70em 130px;
+  /* margin: 70em 130px; */
   z-index: 100;
+  width: 98%;
+  top: 62%;
+  left: 1%;
 }
 .ichiranA2{
   display: none;
@@ -410,11 +589,25 @@ PC用のスタイル
   font-size: 22px;
   background: #0c1620;
   position: relative;
+  text-decoration: none;
 }
+.ichiranBtn-sf{
+  display: none;
+}
+.footerTop-sf{
+  /* display: none; */
+}
+.secFooterCopy{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 115px;
+  margin-left: 80%;
+  color: #fff;
 }
 
-
-
+}
 
 /*====================
 スマートフォン用のスタイル
@@ -426,6 +619,9 @@ PC用のスタイル
   }
   
 .mainslider{
+  display: none;
+}
+.slider{
   display: none;
 }
 .boxTop{
@@ -447,7 +643,7 @@ PC用のスタイル
   height: 1000px;
   position: relative;
 }
-.aboutTit {
+/* .aboutTit {
   position: absolute;
   display: flex;
   flex-direction: row-reverse;
@@ -455,8 +651,31 @@ PC用のスタイル
   position: absolute;
   right: 270px;
   top: 683px;
+} */
+
+
+.aboutTit {
+  position: absolute;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  position: absolute;
+  right: 110%;
+  /* top: 1700px; */
+  bottom: -35%;
 }
 
+.aboutRight {
+    width: 100%;
+    margin-left: -100px;
+    /* margin-top: 157px; */
+    position: relative;
+    margin-right: 14px;
+}
+#secAbout {
+  margin-top: 50px;
+  margin-bottom: 145px;
+}
 .expTxt {
   /* text-align: justify; */
   /* margin-left: 100px; */
@@ -471,6 +690,14 @@ PC用のスタイル
   text-align: center;
   align-items: center;
   border: solid 1px #0c1620;
+  padding: 5px 5px;
+}
+.expTxt p{
+  font-size: 12px;
+  line-height: 2.375;
+}
+#secColumn {
+  padding: 80px 0 60px;
 }
 .worksTit h2 {
   color: #ffffff;
@@ -494,6 +721,7 @@ PC用のスタイル
   height: 1000px;
   position: relative;
   width: 100%;
+  background-position: 21%;
 }
 .secWorks {
   position: absolute;
@@ -508,7 +736,7 @@ PC用のスタイル
   /* margin-top: 0; */
   /* margin: 70em 130px; */
   z-index: 100;
-  margin-top: 98%;
+  margin-top: 60%;
 }
 .Itembtn {
   letter-spacing: 5px;
@@ -517,12 +745,13 @@ PC用のスタイル
   border: solid 1px #ffffff;
   text-align: center;
   align-items: center;
-  width: 100%;
+  width: 85%;
   margin-right: 8px;
   margin-bottom: 5px;
   background-color: #0c1620;
   padding-top: 30px;
   padding-bottom: 30px;
+  width: 100%;
 }
 .columnTit h2 {
   font-size: 23px;
@@ -536,6 +765,12 @@ PC用のスタイル
 .columnTit p {
   font-size: 12px;
   margin-left: 12px;
+}
+.columnLi2{
+  display: none;
+}
+.columnUl{
+  padding: 0;
 }
 .ichiranA{
   display: none;
@@ -599,12 +834,116 @@ PC用のスタイル
   display: none;
 }
 .footerleft span{
-  display: p;
+  display: none;
+}
+/* .ichiranA2{ */
+/* display: none; */
+/* } */
+
+.ichiranBtn-sf{
+  width: 90%;
+  letter-spacing: 5px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 4px;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  border: solid 1px #0c1620;
+  margin: 0 10px;
+  color: #8D8D8D;
+
+  position: relative; /* relative位置を指定 */
+  z-index: 0;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+.ichiran-sf{
+  text-decoration: none;
 }
 
+.ichiranBtn-sf::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 0;
+  height: 100%;
+  background-color: #282b2d;
+  transition: width 0.5s; /* トランジションを指定 */
 }
 
-
-
-
+.ichiranBtn-sf:hover::before {
+  width: 100%;
 }
+
+#footer{
+  display: none;
+  margin-bottom: 100px;
+}
+.footerTop-sf{
+  color: #fff;
+  /* display: flex; */
+  /* flex-direction: column; */
+  position: relative;
+  background: url(images/sm/footerIriguchi-sf2.png);
+  background-position: bottom;
+}
+.footerTit p{
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  text-align: center;
+  margin: 0px auto;
+  padding-top: 13px;
+  
+}
+.footerTit{
+  text-align: center;
+  align-items: center;
+  position: relative;
+}
+.footerTex{
+  display: flex;
+  flex-direction: column;
+}
+.footerBimage{
+  text-align: center;
+  justify-content: center;
+}
+.secFooterCopy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 115px;
+  /* margin-left: 80%; */
+  color: #fff;
+  margin-bottom: 100px;
+}
+.secFooterCopy p{
+  font-size: 12px;
+}
+.footerTex h3{
+  font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.footerTex p{
+  font-size: 12px;
+margin-bottom: 0;
+}
+
+.jusho{
+  margin-top: 43px;
+}
+.uketuke{
+  margin-top: -15pxS;
+  }
+
+.slider{
+margin: 0;
+}
+}
+
