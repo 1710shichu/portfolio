@@ -73,7 +73,8 @@ li{
 .boxItem a{
   color: #ffffff;
   text-decoration: none;
-  line-height: 50px;
+  line-height: 80px;
+  font-size: 16px;
 }
 .aboutTop{
   width: 100%;
@@ -515,6 +516,154 @@ li{
   width: 100%;
 }
 
+#g-nav{
+  /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
+  position:fixed;
+  z-index: 999;
+  /*ナビのスタート位置と形状*/
+top:0;
+right: 120%;
+width:100%;
+  height: 100vh;/*ナビの高さ*/
+background:#111719;
+  /*動き*/
+transition: all 0.6s;
+}
+/*アクティブクラスがついたら位置を0に*/
+#g-nav.panelactive{
+  right: 0;
+}
+.g-nav ul {
+  /*ナビゲーション天地中央揃え*/
+  position: absolute;
+  z-index: 999;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+.nav-items-item{
+  list-style: none;
+  text-align: center;
+}
+ 
+
+/* #g-nav li a{
+	color: #fff;
+	text-decoration: none;
+	padding:10px;
+	display: block;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	font-weight: bold;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  line-height: 50px;
+  font-size: 26px;
+  margin-right: 20px;
+  letter-spacing: 8px;
+  position: relative;
+} */
+#g-nav h2{
+	color: #fff;
+	/* text-decoration: none; */
+	padding:10px;
+	display: block;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	font-weight: bold;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  line-height: 50px;
+  font-size: 26px;
+  margin-right: 20px;
+  letter-spacing: 8px;
+  position: absolute;
+  right: 2px;
+  top: 60px;
+}
+.nav-items{
+  /* display: flex; */
+}
+.openbtn{
+	position:fixed;
+  z-index: 9999;/*ボタンを最前面に*/
+	top:10px;
+	/* right: 10px; */
+  left: 10px;
+	cursor: pointer;
+    width: 50px;
+    height:50px;
+}
+.openbtn span{
+  display: inline-block;
+  transition: all .4s;
+  position: absolute;
+  left: 14px;
+  height: 3px;
+  border-radius: 2px;
+  background-color: #fff;
+  width: 25%;
+  writing-mode: sideways-rl;
+  text-orientation: mixed;
+  color: #fff;
+}
+.openbtn span:nth-of-type(1) {
+	top:15px;	
+}
+
+.openbtn span:nth-of-type(2) {
+	top:23px;
+}
+
+.openbtn span:nth-of-type(3) {
+	top:31px;
+}
+.openbtn span:nth-of-type(4) {
+	top:31px;
+}
+.openbtn span:nth-of-type(5) {
+  opacity: 0;
+}
+
+.openbtn.active span:nth-of-type(1) {
+    top: 18px;
+    left: 18px;
+    transform: translateY(6px) rotate(-45deg);
+    width: 30%;
+}
+
+.openbtn.active span:nth-of-type(2) {
+  opacity: 0;
+}
+
+.openbtn.active span:nth-of-type(3){
+  top: 30px;
+  left: 18px;
+  transform: translateY(-6px) rotate(45deg);
+  width: 30%;
+}
+.openbtn.active span:nth-of-type(4) {
+  opacity: 0;
+}
+.openbtn.active span:nth-of-type(5) {
+  top: 31px;
+}
+.nav-adress{
+  color: #fff;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-size: 8px;
+  align-items: center;
+  
+}
+.nav-adress h3{
+  font-size: 20px;
+}
+.nav-adress img{
+  width: 20%;
+}
+
 
 /*================
 PC用のスタイル
@@ -605,6 +754,42 @@ PC用のスタイル
   margin-top: 115px;
   margin-left: 80%;
   color: #fff;
+}
+.nav-adress{
+  color: #fff;
+  position: absolute;
+  bottom: 35px;
+  left: 60px;
+  font-size: 13px;
+  
+}
+.nav-adress h3{
+  font-size: 30px;
+}
+.nav-adress img{
+  width: 20%;
+}
+.nav-items{
+  display: flex;
+}
+#g-nav li a{
+	color: #fff;
+	text-decoration: none;
+	padding:10px;
+	display: block;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	font-weight: bold;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  line-height: 50px;
+  font-size: 26px;
+  margin-right: 20px;
+  letter-spacing: 8px;
+  position: relative;
+}
+.footerTop-sf{
+  display: none;
 }
 
 }
@@ -945,5 +1130,41 @@ margin-bottom: 0;
 .slider{
 margin: 0;
 }
+.nav-items{
+  /* display: flex; */
+}
+#g-nav li a{
+	color: #fff;
+	text-decoration: none;
+	padding:10px;
+	display: block;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	font-weight: bold;
+  /* -ms-writing-mode: tb-rl; */
+  /* writing-mode: vertical-rl; */
+  line-height: 50px;
+  font-size: 12px;
+  margin-right: 20px;
+  /* letter-spacing: 8px; */
+  position: relative;
+}
+.g-nav ul {
+  /*ナビゲーション天地中央揃え*/
+  position: absolute;
+  z-index: 999;
+  top:35%;
+  left:35%;
+  transform: translate(-50%,-50%);
+}
+.nav-adress {
+  color: #fff;
+  position: absolute;
+  bottom: 20px;
+  left: 121px;
+  font-size: 8px;
+  align-items: center;
+  text-align: center;
 }
 
+}
